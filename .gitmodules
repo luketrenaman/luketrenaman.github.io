@@ -1,0 +1,3 @@
+[submodule "snakemaze"]
+	path = snakemaze
+	url = https://github.com/luketrenaman/snakemaze.git
