@@ -1,0 +1,73 @@
+body {
+	font-size: 2rem;
+}
+
+header h1 {
+	margin-bottom: 0;
+}
+
+footer {
+	background: #e1e1e1;
+}
+
+.text-muted {
+	color: #888;
+}
+
+.paragraph {
+	margin-right: 2rem;
+	display: none;
+}
+
+.plus {
+	margin-right: 1rem;
+    /*color:white;*/
+	color: black;
+	font-weight: bold;
+	background-color: #ddd;
+	display: inline-flex;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
+	font-size: 3rem;
+	line-height: 1.4;
+	border-radius: 1.5rem;
+	cursor: pointer;
+	transition: 0.2s all;
+	user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.plus-txt {
+	transition: 0.2s all;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.plus[data-active=""] {
+	background: #ddd;
+}
+
+.plus[data-active="true"] {
+	background: #aaa;
+}
+
+.plus[data-active="true"]:hover {
+	background: #888;
+}
+
+.plus[data-active="true"] > .plus-txt {
+	transform: rotate(45deg);
+}
+
+.plus:hover {
+	background-color: #aaa;
+}
