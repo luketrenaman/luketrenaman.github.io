@@ -4,3 +4,6 @@
 [submodule "tetris"]
 	path = tetris
 	url = https://github.com/luketrenaman/tetris.git
+[submodule "luketris"]
+	path = luketris
+	url = https://github.com/luketrenaman/luketris.git
