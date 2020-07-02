@@ -7,3 +7,6 @@
 [submodule "luketris"]
 	path = luketris
 	url = https://github.com/luketrenaman/luketris.git
+[submodule "wave_editor"]
+	path = wave_editor
+	url = https://github.com/luketrenaman/wave_editor.git
