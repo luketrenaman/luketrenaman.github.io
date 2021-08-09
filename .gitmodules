@@ -10,3 +10,6 @@
 [submodule "wave_editor"]
 	path = wave_editor
 	url = https://github.com/luketrenaman/wave_editor.git
+[submodule "archives"]
+	path = archives
+	url = https://github.com/luketrenaman/archives.git
