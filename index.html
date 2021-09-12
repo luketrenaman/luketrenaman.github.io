@@ -8,13 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
         <link rel="author" href="https://github.com/luketrenaman" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="https://kit.fontawesome.com/8f16aa06ce.js" crossorigin="anonymous"></script>
 
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156935778-1"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
+          window.dataLayer=window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
@@ -27,73 +27,138 @@
 
     </head>
     <body>
-        <div class = "wrapper">
-        <header class = "container">
-            <h1>
-                Hi, I'm Luke Trenaman.
-            </h1>
-            <p>Welcome to my <b>epic</b> website.</p>
+        <div class="wrapper"> 
+        <header class="container">
+            <p class="header-s1">
+                Hello, I'm
+            </p>
+            <p class="header-s2">Luke Trenaman</h1>
+            <p class="header-s3">Welcome to my <b>epic</b> website.</p>
         </header>
-        <main>
-            <section class = "container">
-                <h2>
-                    Here's some of my projects:
-                </h2>
-                <h3> Web Development</h3>
-                <div class = "paragraph">
-                    <ul>
-                        <li><h3><a href = "https://github.com/luketrenaman/rpimidi">Cloud Keys</a></h3></li>
-                    </ul>
-                    
+        <main class="mx-auto">
+            <section class="container">
+                <div class="row wrapper">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="game-card">
+                          <a href="rotator/"><img src="thumbnails/rotator.png"/></a>
+                          <div class="game-blurb">
+                              <div class="game-title"><a href="rotator/">Rotator</a></div>
+                              <span class="tag tag-game" title="This is a game, playable in your browser!">Game</span>
+                              <span class="tag tag-date" title="Finished on August 31st, 2021">Aug. 2021</span>
+                              <div class="game-tagline">A bullet hell where you control the bullets.
+                              </div>
+                              <a href="https://github.com/luketrenaman/rotator"><button class="learn-more">Learn more</button></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="game-card">
+                          <a href="snakemaze/snakemaze/"><img src="thumbnails/snakemaze.png"/></a>
+                          <div class="game-blurb">
+                              <div class="game-title"><a href="snakemaze/snakemaze/">Snake Maze</a></div>
+                              <span class="tag tag-game" title="This is a game, playable in your browser!">Game</span>
+                              <span class="tag tag-date" title="Finished on March 29th, 2020">Mar. 2020</span>
+                              <div class="game-tagline">Snake, but a maze! Get the gems to escape.</div>
+                              <a href="https://github.com/luketrenaman/snakemaze"><button class="learn-more">Learn more</button></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="game-card">
+                          <a href="archives/luketris/"><img src="thumbnails/luketris.png"/></a>
+                          <div class="game-blurb">
+                              <div class="game-title"><a href="archives/luketris/">Luketris</a></div>
+                              <span class="tag tag-game" title="This is a game, playable in your browser!">Game</span>
+                              <span class="tag tag-date" title="March 6th, 2020">Mar. 2020</span>
+                              <div class="game-tagline">Tetris, but I’m the pieces!</div>
+                              <a href="https://github.com/luketrenaman/luketris"><button class="learn-more">Learn more</button></a>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                      <div class="game-card">
+                        <a href="archives/ducksouls/"><img src="thumbnails/duck_souls.png"/></a>
+                        <div class="game-blurb">
+                            <div class="game-title"><a href="ducksouls/">Duck Souls</a></div>
+                            <span class="tag tag-game" title="This is a game, playable in your browser!">Game</span>
+                            <span class="tag tag-date" title="Finished on August 29th, 2021">Aug. 2021</span>
+                            <div class="game-tagline">A souls-like game featuring the amazing art of Gabe Salazar.</div>
+                            <a href="https://github.com/luketrenaman/ducksouls"><button class="learn-more">Learn more</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                      <div class="game-card">
+                        <a href="archives/tandem"><img src="thumbnails/cloud_keys.png"/></a>
+                        <div class="game-blurb">
+                            <div class="game-title"><a href="archives/tandem">Cloud Keys</a></div>
+                            <span class="tag tag-code" title="A repository cannot be run on web, but has its code openly available.">Repository</span>
+                            <span class="tag tag-date" title="Finished on June 27, 2019">Sep. 2018</span>
+                            <div class="game-tagline">A realtime streaming service for MIDI keyboard performances.</div>
+                            <a href="https://github.com/luketrenaman/cloudkeys"><button class="learn-more">Learn more</button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="game-card">
+                          <a href="archives/tandem"><img src="thumbnails/tandem.png"/></a>
+                          <div class="game-blurb">
+                              <div class="game-title"><a href="archives/tandem">Tandem</a></div>
+                              <span class="tag tag-game" title="This is a game, playable in your browser!">Game</span>
+                              <span class="tag tag-date" title="Finished on September 25th, 2018">Sep. 2018</span>
+                              <div class="game-tagline">A cooperative rhythm game featuring original music.</div>
+                              <a href="https://github.com/luketrenaman/archives"><button class="learn-more">View source</button></a>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                      <div class="game-card">
+                            <a href="archives/2d/"><img src="thumbnails/platformer.png"/></a>
+                            <div class="game-blurb">
+                                <div class="game-title"><a href="archives/tandem">Platformer Engine</a></div>
+                                <span class="tag tag-game" title="This is a game, playable in your browser!">Game</span>
+                                <span class="tag tag-date" title="Finished on December 2nd, 2018">Dec. 2018</span>
+                                <div class="game-tagline">A custom platformer engine with camera interpolation and physics.</div>
+                                <a href="https://github.com/luketrenaman/archives"><button class="learn-more">View source</button></a>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="game-card">
+                        <a href="archives/ukulele/"><img src="thumbnails/ukulele.png"/></a>
+                        <div class="game-blurb">
+                            <div class="game-title"><a href="archives/ukulele/">Ukulele Chords</a></div>
+                            <span class="tag tag-webpage" title="This project is a webpage, just like the one you're on now ;)">Webpage</span>
+                            <span class="tag tag-date" title="Finished on February 5th, 2018">Feb. 2018</span>
+                            <div class="game-tagline">Generate ukulele chord inversions with this helpful tool!</div>
+                            <a href="https://github.com/luketrenaman/archives"><button class="learn-more">View source</button></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="game-card">
+                            <a href="archives/conway/"><img src="thumbnails/conways.png"/></a>
+                            <div class="game-blurb">
+                            <div class="game-title"><a href="archives/conway/">Conway's Game</a></div>
+                            <span class="tag tag-webpage" title="This project is a webpage, just like the one you're on now ;)">Webpage</span>
+                            <span class="tag tag-date" title="Finished on December 2nd, 2018">Dec. 2018</span>
+                            <div class="game-tagline">A small simulation of the Conway's Game Of Life simulation.</div>
+                            <a href="https://github.com/luketrenaman/archives"><button class="learn-more">View source</button></a>
+                            </div>
+                        </div>
+                      </div>
                 </div>
-
-                <h3>Game Development</h3>
-                <div class = "paragraph">
-                    <ul>
-                        <li><h3><a href = "rotator/">Rotator</a></h3></li>
-                        <li><h3><a href = "ducksouls/">Duck Souls</a></h3></li>
-                        <li><h3><a href = "snakemaze/snakemaze/">Snake Maze</a></h3></li>
-                        <li><h3><a href = "luketris/index.html">Luketris</a></h3></li>
-                        <li><h3><a href = "wave_editor/index.html">Wave Editor</a></h3></li>
-                    </ul>
-                </div>
-                <h3>Archives</h3>
-                <div class = "paragraph">
-                    <ul>
-                        <li><h3><a href = "archives/2d/">2D Platformer Engine</a></h3></li>
-                        <li><h3><a href = "archives/space_glider/">Blocky Spaceship</a></h3></li>
-                        <li><h3><a href = "archives/conway/">Conway's Game of Life</a></h3></li>
-                        <li><h3><a href = "archives/music/">3D Music Visualization</a></h3></li>
-                        <li><h3><a href = "archives/tandem/">Tandem</a></h3></li>
-                        <li><h3><a href = "archives/ukulele/">Ukulele Chord Generator</a></h3></li>
-                    </ul>
-                </div>
-                <!--
-                <h3>Data Science</h3>
-                <div class = "paragraph">
-                    
-                </div>
-
-                <h3>Music Composition</h3>
-                <div class = "paragraph">
-                    
-                </div>
-                -->
-            </section>
-            <br>
+              </div>
         </main>
         </div>
         <footer>
             <hr class="margin-side-vw">
-            <div class="container">
-                <p>Have a project you want completed, or just want to say hi?</p>
-                <p>Feel free to contact me below.</p>
-            </div>
             <div class="icon-container">
-                <a href = "mailto:trenamanluke@gmail.com" title = "Email"><i class="fa fa-envelope"></i></a>
-                <a href = "https://github.com/luketrenaman" title = "GitHub"><i class="fa fa-github"></i></a>
-                <a href = "https://www.linkedin.com/in/luke-trenaman-8854a11a3/" title = "LinkedIn"><i class="fa fa-linkedin"></i></a>
-                <a href = "https://soundcloud.com/ltrenaman" title = "SoundCloud"><i class="fa fa-soundcloud"></i></a>
+                <a href="mailto:trenamanluke@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/luketrenaman" title="GitHub"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luke-trenaman-8854a11a3/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                <a href="https://soundcloud.com/ltrenaman" title="SoundCloud"><i class="fa fa-soundcloud"></i></a>
+                <a href="https://luketrenaman.itch.io/" title="itch.io"><i class="fab fa-itch-io"></i></a>
             </div>
         </footer>
         
