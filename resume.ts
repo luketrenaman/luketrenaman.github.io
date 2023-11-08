@@ -68,12 +68,30 @@ const archives = {
 }
 
 // TODO: add correct timelines for school semesters
-const fall20182019 = new Date();
-const fall20192020 = new Date();
-const spring20192020 = new Date();
-const AU2022 = new Date();
-const SP2023 = new Date();
-const AU2023 = new Date();
+const au2018 = {
+    start: new Date("Aug 17 2018"),
+    end: new Date("Dec 20 2018"),
+};
+const au2019 = {
+    start: new Date("Aug 17 2019"),
+    end: new Date("Dec 20 2019"),
+};;
+const sp2019 = {
+    start: new Date("Jan 3 2019"),
+    end: new Date("May 30 2019"),
+};;
+const au2022 = {
+    start: new Date("Aug 23 2022"),
+    end: new Date("December 14 2022"),
+};;
+const sp2023 = {
+    start: new Date("Jan 9 2023"),
+    end: new Date("May 2 2023"),
+};;
+const au2023 = {
+    start: new Date("Aug 22 2022"),
+    end: new Date("December 15 2022"),
+};;
 export const resume: Resume = {
     courses: [
         {
@@ -108,56 +126,42 @@ export const resume: Resume = {
         },
         {
             name: "Computer Programming 1",
-            start: fall20182019,
-            end: fall20182019,
+            ...au2018,
             institution: "William Mason High School"
         },
         {
             name: "Computer Programming 2",
-            start: fall20192020,
-            end: fall20192020,
+            ...au2019,
             institution: "William Mason High School"
         },
         {
             name: "Computer Programming 3",
-            start: spring20192020,
-            end: spring20192020,
-            institution: "William Mason High School"
-        },
-        {
-            name: "Computer Programming 3",
-            start: spring20192020,
-            end: spring20192020,
+            ...sp2019,
             institution: "William Mason High School"
         },
         {
             name: "Software 1",
-            start: AU2022,
-            end: AU2022,
+            ...au2022,
             institution: "The Ohio State University",
         },
         {
             name: "Software 2",
-            start: SP2023,
-            end: SP2023,
+            ...sp2023,
             institution: "The Ohio State University",
         },
         {
             name: "Foundations 1",
-            start: SP2023,
-            end: SP2023,
+            ...sp2023,
             institution: "The Ohio State University",
         },
         {
             name: "Foundations 2",
-            start: AU2023,
-            end: AU2023,
+            ...au2023,
             institution: "The Ohio State University",
         },
         {
             name: "Systems 1",
-            start: AU2023,
-            end: AU2023,
+            ...au2023,
             institution: "The Ohio State University",
         },
 
