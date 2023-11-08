@@ -64,8 +64,7 @@ const interalliance = {
 // Dates were lost for archives projects (they were retrieved from my filesystem before using Git)
 // This is just the timeframe in which projects have been added to archives
 const archives = {
-    start: new Date("Jul 26 2021"),
-    end: new Date("Sep 14 2021"),
+    start: new Date("Jan 1 2018"),
 }
 
 // TODO: add correct timelines for school semesters
@@ -255,6 +254,7 @@ export const resume: Resume = {
         {
             name: "Tandem",
             ...archives,
+            end: new Date("Sept 25 2018"),
             link: "https://luketrenaman.com/archives/tandem",
             repo: "https://github.com/archives/tandem",
             description: "A cooperative rhythm game featuring original music.",
@@ -266,6 +266,7 @@ export const resume: Resume = {
             link: "https://luketrenaman.com/archives/2d",
             repo: "https://github.com/luketrenaman/archives/2d",
             ...archives,
+            end: new Date("Dec 2 2018"),
             description: "A custom platformer engine with camera interpolation and physics.",
             type: "Game",
             platforms: ["Desktop"],
@@ -275,6 +276,7 @@ export const resume: Resume = {
             link: "https://luketrenaman.com/archives/conway",
             repo: "https://github.com/luketrenaman/archives/conway",
             ...archives,
+            end: new Date("Dec 2 2018"),
             description: "A small simulation of the Conway's Game Of Life simulation.",
             type: "Web",
             platforms: ["Desktop", "Mobile"],
@@ -283,7 +285,8 @@ export const resume: Resume = {
             name: "Space Glider",
             link: "https://luketrenaman.com/archives/space_glider",
             repo: "https://github.com/luketrenaman/archives/space_glider",
-            ...archives,
+            start: new Date("Dec 21, 2019"),
+            end: new Date("Dec 31 2019"),
             description: "An experiment with developing 3D games",
             type: "Game",
             platforms: ["Desktop"],
