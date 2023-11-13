@@ -1,23 +1,23 @@
 // Why is my resume typescript validated?? It makes me happy
-interface Timeline {
+export interface Timeline {
     start: Date,
     end: Date,
     name: string;
 }
 
 // Courses don't have repository links as that seems unethical
-interface Course extends Timeline {
+export interface Course extends Timeline {
     institution: "William Mason High School" | "Sinclair Community College" | "The Ohio State University" | "Coursera" | "FreeCodeCamp" | "Microsoft Learn" | string;
 }
 
-interface Job extends Timeline {
+export interface Job extends Timeline {
     location?: string;
     modality?: "In Person" | "Hybrid" | "Remote";
     description?: string[];
     title: string;
 }
 
-interface Project extends Timeline {
+export interface Project extends Timeline {
     type: "Web" | "Game" | "Other";
     platforms: ("Desktop" | "Mobile")[];
     link: string;
@@ -25,12 +25,12 @@ interface Project extends Timeline {
     description: string;
     thumbnail?: string;
 }
-interface Contest extends Timeline {
+export interface Contest extends Timeline {
     link?: string;
     award?: string;
     description?: string;
 }
-interface Resume {
+export interface Resume {
     courses: Course[],
     projects: Project[],
     contests: Contest[],
@@ -175,6 +175,7 @@ export const resume: Resume = {
             description: "Build and launch burgers in a post-apocalyptic diner.",
             start: new Date("Mar 30 2020"),
             end: new Date("Mar 12 2022"),
+            thumbnail: "thumbnails/brain_food.png",
         },
         {
             name: "Brain Food Wave Editor",
@@ -194,6 +195,7 @@ export const resume: Resume = {
             type: "Web",
             platforms: ["Desktop", "Mobile"],
             description: "Volunteered at my school to redesign the student activities website.",
+            thumbnail: "thumbnails/site.png",
         },
         {
             name: "INTERalliance",
@@ -202,6 +204,7 @@ export const resume: Resume = {
             type: "Web",
             platforms: ["Desktop", "Mobile"],
             description: "Worked at INTERalliance to implement a redesigned website.",
+            thumbnail: "thumbnails/ia_site.png",
         },
         {
             name: "Rotator",
@@ -212,6 +215,7 @@ export const resume: Resume = {
             type: "Game",
             platforms: ["Desktop", "Mobile"],
             description: "A bullet hell where you control the bullets.",
+            thumbnail: "thumbnail/rotator.png",
         },
         {
             name: "Snake Maze",
@@ -222,6 +226,7 @@ export const resume: Resume = {
             description: "Snake, but a maze! Get the gems to escape.",
             type: "Game",
             platforms: ["Desktop"],
+            thumbnail: "thumbnail/snakemaze.png",
         },
         {
             name: "Snake Maze Editor",
@@ -242,7 +247,7 @@ export const resume: Resume = {
             description: "Tetris, but I’m the pieces!",
             type: "Game",
             platforms: ["Desktop"],
-
+            thumbnail: "thumbnail/luketris.png",
         },
         {
             name: "Duck Souls",
@@ -253,6 +258,7 @@ export const resume: Resume = {
             description: "A souls-like game featuring the amazing art of Gabe Salazar.",
             type: "Game",
             platforms: ["Desktop"],
+            thumbnail: "thumbnail/duck_souls.png",
         },
         // TODO: add more accurate dates for archives
         {
@@ -264,6 +270,7 @@ export const resume: Resume = {
             description: "A cooperative rhythm game featuring original music.",
             type: "Game",
             platforms: ["Desktop"],
+            thumbnail: "thumbnail/tandem.png",
         },
         {
             name: "Platformer Engine",
@@ -274,6 +281,7 @@ export const resume: Resume = {
             description: "A custom platformer engine with camera interpolation and physics.",
             type: "Game",
             platforms: ["Desktop"],
+            thumbnail: "thumbnail/platformer.png",
         },
         {
             name: "Conway's Game",
@@ -284,6 +292,7 @@ export const resume: Resume = {
             description: "A small simulation of the Conway's Game Of Life simulation.",
             type: "Web",
             platforms: ["Desktop", "Mobile"],
+            thumbnail: "thumbnail/conways.png",
         },
         {
             name: "Space Glider",
@@ -330,6 +339,7 @@ export const resume: Resume = {
             ...cloudkeys,
             type: "Web",
             platforms: ["Desktop"],
+            thumbnail: "thumbnail/cloud_keys.png",
         },
         {
             name: "Geofare",
@@ -339,6 +349,7 @@ export const resume: Resume = {
             platforms: ["Desktop", "Mobile"],
             link: "https://geofare.github.io",
             repo: "https://github.com/geofare/geofare.github.io",
+            thumbnail: "thumbnail/geofare.png",
         },
         {
             name: "Wage Worker of Wall Street",
