@@ -10,9 +10,9 @@ export function ProjectCard({project}: ProjectCardProps){
           <div className="game-blurb">
             <div className="game-title">
               <a href={project.link}>INTERalliance</a>
-              { project.repo ? <a href={project.repo}><i className="fa fa-github right-info"></i></a> : <></> }
-              { project.platforms.includes("Desktop") ? <i className="fa fa-desktop right-info"></i> : <></> }
-              { project.platforms.includes("Mobile") ? <i className="fas fa-mobile-alt right-info"></i> : <></> }
+              { project.repo && <a href={project.repo}><i className="fa fa-github right-info"></i></a> }
+              { project.platforms.includes("Desktop") && <i className="fa fa-desktop right-info"></i> }
+              { project.platforms.includes("Mobile") && <i className="fas fa-mobile-alt right-info"></i> }
             </div>
             <span className="tag tag-date" title="Finished on Aug 9th, 2022">Aug. 2022</span>
             <div className="game-tagline">{project.description}</div>
