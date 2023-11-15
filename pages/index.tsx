@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { resume } from '@/resume'
-import { ProjectCard } from '@/components/ProjectCard'
+import { ProjectsList } from '@/components/ProjectsList'
 export default function Home() {
   return (
     <>
@@ -16,7 +15,7 @@ export default function Home() {
         <main className="mx-auto">
           <section className="container">
             <div className="row wrapper">
-              {resume.projects.map((project,i) => <ProjectCard key={i} project={project}/>)}
+              <ProjectsList />
             </div>
           </section>
         </main>
