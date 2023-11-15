@@ -11,7 +11,7 @@ export default function Document() {
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
         <link rel="author" href="https://github.com/luketrenaman" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <script src="https://kit.fontawesome.com/8f16aa06ce.js" crossOrigin="anonymous"></script>
+        <script defer src="https://kit.fontawesome.com/8f16aa06ce.js" crossOrigin="anonymous"></script>
 
         
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156935778-1"></script>

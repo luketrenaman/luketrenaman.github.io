@@ -9,7 +9,7 @@ export function ProjectCard({project}: ProjectCardProps){
           <a href={project.link}><img src={project.thumbnail} /></a>
           <div className="game-blurb">
             <div className="game-title">
-              <a href={project.link}>INTERalliance</a>
+              <a href={project.link}>{project.name}</a>
               { project.repo && <a href={project.repo}><i className="fa fa-github right-info"></i></a> }
               { project.platforms.includes("Desktop") && <i className="fa fa-desktop right-info"></i> }
               { project.platforms.includes("Mobile") && <i className="fas fa-mobile-alt right-info"></i> }
