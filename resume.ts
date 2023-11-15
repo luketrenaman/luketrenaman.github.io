@@ -215,7 +215,7 @@ export const resume: Resume = {
             type: "Game",
             platforms: ["Desktop", "Mobile"],
             description: "A bullet hell where you control the bullets.",
-            thumbnail: "thumbnail/rotator.png",
+            thumbnail: "thumbnails/rotator.png",
         },
         {
             name: "Snake Maze",
@@ -226,7 +226,7 @@ export const resume: Resume = {
             description: "Snake, but a maze! Get the gems to escape.",
             type: "Game",
             platforms: ["Desktop"],
-            thumbnail: "thumbnail/snakemaze.png",
+            thumbnail: "thumbnails/snakemaze.png",
         },
         {
             name: "Snake Maze Editor",
@@ -247,7 +247,7 @@ export const resume: Resume = {
             description: "Tetris, but I’m the pieces!",
             type: "Game",
             platforms: ["Desktop"],
-            thumbnail: "thumbnail/luketris.png",
+            thumbnail: "thumbnails/luketris.png",
         },
         {
             name: "Duck Souls",
@@ -258,7 +258,7 @@ export const resume: Resume = {
             description: "A souls-like game featuring the amazing art of Gabe Salazar.",
             type: "Game",
             platforms: ["Desktop"],
-            thumbnail: "thumbnail/duck_souls.png",
+            thumbnail: "thumbnails/duck_souls.png",
         },
         // TODO: add more accurate dates for archives
         {
@@ -270,7 +270,7 @@ export const resume: Resume = {
             description: "A cooperative rhythm game featuring original music.",
             type: "Game",
             platforms: ["Desktop"],
-            thumbnail: "thumbnail/tandem.png",
+            thumbnail: "thumbnails/tandem.png",
         },
         {
             name: "Platformer Engine",
@@ -281,7 +281,7 @@ export const resume: Resume = {
             description: "A custom platformer engine with camera interpolation and physics.",
             type: "Game",
             platforms: ["Desktop"],
-            thumbnail: "thumbnail/platformer.png",
+            thumbnail: "thumbnails/platformer.png",
         },
         {
             name: "Conway's Game",
@@ -292,7 +292,7 @@ export const resume: Resume = {
             description: "A small simulation of the Conway's Game Of Life simulation.",
             type: "Web",
             platforms: ["Desktop", "Mobile"],
-            thumbnail: "thumbnail/conways.png",
+            thumbnail: "thumbnails/conways.png",
         },
         {
             name: "Space Glider",
@@ -339,7 +339,7 @@ export const resume: Resume = {
             ...cloudkeys,
             type: "Web",
             platforms: ["Desktop"],
-            thumbnail: "thumbnail/cloud_keys.png",
+            thumbnail: "thumbnails/cloud_keys.png",
         },
         {
             name: "Geofare",
@@ -349,7 +349,7 @@ export const resume: Resume = {
             platforms: ["Desktop", "Mobile"],
             link: "https://geofare.github.io",
             repo: "https://github.com/geofare/geofare.github.io",
-            thumbnail: "thumbnail/geofare.png",
+            thumbnail: "thumbnails/geofare.png",
         },
         {
             name: "Wage Worker of Wall Street",

@@ -3,8 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
-        <title>luketrenaman.com | luke trenaman but website</title>
+      <Head title="luketrenaman.com | luke trenaman but website">
         <meta charSet="utf-8"/>
         <meta name="description" content="The website of Luke Trenaman"/>
         <meta name="keywords" content="luke trenaman snake maze snakemaze"/>

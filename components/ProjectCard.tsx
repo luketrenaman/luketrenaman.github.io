@@ -1,4 +1,7 @@
 import { Project } from "@/resume";
+import { Tag } from "./Tag";
+import { getAbbrevMonth } from "@/util/date";
+import { DateTag } from "./DateTag";
 export interface ProjectCardProps{
     project: Project;
 }
@@ -14,7 +17,8 @@ export function ProjectCard({project}: ProjectCardProps){
               { project.platforms.includes("Desktop") && <i className="fa fa-desktop right-info"></i> }
               { project.platforms.includes("Mobile") && <i className="fas fa-mobile-alt right-info"></i> }
             </div>
-            <span className="tag tag-date" title="Finished on Aug 9th, 2022">Aug. 2022</span>
+            <Tag type={project.type}/>
+            <DateTag date={project.end} />
             <div className="game-tagline">{project.description}</div>
           </div>
         </div>
