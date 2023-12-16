@@ -4,27 +4,24 @@ import { ProjectsList } from '@/components/ProjectsList'
 import { resume } from '@/resume'
 import { CourseList } from '@/components/CourseList'
 import { ContestList } from '@/components/ContestList'
+import Head from 'next/head'
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>luketrenaman.com | luke trenaman but website</title>
+      </Head>
       <div>
         <header className="container">
           <p className="header-s1">
             Hello, I&apos;m
           </p>
-          <p className="header-s2">Luke Trenaman</p>
-          <p className="header-s3">Welcome to my <b>epic</b> website.</p>
+          <p className="header-s2 i-like-blue">Luke Trenaman</p>
+          <p className="header-s3">Welcome to my <b>epic</b> website. It has:</p>
           <p className="header-s3">
-            {`${resume.projects.length} projects`}
-          </p>
-          <p className="header-s3">
-            {/* Add one as there is a single contest with more than one award */}
-            {`${resume.contests.length} contests (${resume.contests.filter(contest => contest.award).length + 1} awards!)`}
-          </p>
-          <p className="header-s3">
-            {`${resume.courses.length} courses`}
-          </p>
-          <p className="header-s3">
+            {`${resume.projects.length} projects `}
+            {`${resume.contests.length} contests (${resume.contests.filter(contest => contest.award).length + 1} awards!) `}
+            {`${resume.courses.length} courses `}
             7... Luketriminos?
           </p>
         </header>
