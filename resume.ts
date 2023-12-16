@@ -273,6 +273,17 @@ export const resume: Resume = {
             thumbnail: "thumbnails/tandem.png",
         },
         {
+            name: "Ukulele Chord Generator",
+            ...archives,
+            end: new Date("Dec 2 2018"),
+            link: "https://luketrenaman.com/archives/ukulele",
+            repo: "https://github.com/archives/ukulele",
+            description: "A useful utility for determining ukulele chord charts.",
+            type: "Web",
+            platforms: ["Desktop", "Mobile"],
+            thumbnail: "thumbnails/ukulele.png",
+        },
+        {
             name: "Platformer Engine",
             link: "https://luketrenaman.com/archives/2d",
             repo: "https://github.com/luketrenaman/archives/2d",
