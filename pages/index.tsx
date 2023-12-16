@@ -4,6 +4,7 @@ import { ProjectsList } from '@/components/ProjectsList'
 import { resume } from '@/resume'
 import { CourseList } from '@/components/CourseList'
 import { ContestList } from '@/components/ContestList'
+import { motion } from 'framer-motion'
 import Head from 'next/head'
 export default function Home() {
   return (
@@ -16,7 +17,11 @@ export default function Home() {
           <p className="header-s1">
             Hello, I&apos;m
           </p>
-          <p className="header-s2 i-like-blue">Luke Trenaman</p>
+          <motion.p
+          initial={{ position: "relative", bottom: 200, right: 200, rotateY: 180, fontFamily: "Arial", rotateX: 180 }}
+          animate={{ bottom: 0, right: 0, rotateY: 720, fontFamily: "Comic Sans MS", rotateX: 0 }}
+          transition={{ duration: 1.5 }}
+          className="header-s2 i-like-blue">Luke Trenaman</motion.p>
           <p className="header-s3">Welcome to my <b>epic</b> website. It has:</p>
           <p className="header-s3">
             {`${resume.projects.length} projects `}
@@ -27,16 +32,13 @@ export default function Home() {
         </header>
         <main className="mx-auto">
           <section className="container">
-            <div className="row wrapper">
-              <ProjectsList />
-            </div>
+            <ProjectsList />
             <div>
               <CourseList />
             </div>
             <div>
               <ContestList />
             </div>
-
           </section>
         </main>
       </div>
