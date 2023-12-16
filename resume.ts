@@ -27,7 +27,7 @@ export interface Project extends Timeline {
 }
 export interface Contest extends Timeline {
     link?: string;
-    award?: string;
+    award?: string | string[];
     description?: string;
 }
 export interface Resume {
@@ -425,14 +425,8 @@ export const resume: Resume = {
             name: "Arcade of Code",
             start: new Date("September 23 2023"),
             end: new Date("September 23 2023"),
-            award: "Code Golf Minigame Winner",
-        },
-        {
-            name: "Arcade of Code",
-            start: new Date("September 23 2023"),
-            end: new Date("September 23 2023"),
-            award: "Second Place (Algorithms Contest)",
-        },
+            award: ["Code Golf Minigame Winner","Second Place (Overall)"],
+        }
     ],
     jobs: [
         {
