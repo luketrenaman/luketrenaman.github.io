@@ -7,18 +7,19 @@ export interface ProjectCardProps{
     project: Project;
 }
 // What if every time a project card scrolled into view it spun around
-export function ProjectCard({project}: ProjectCardProps){
+export function ProjectCard({ project }: ProjectCardProps){
   const [rot, setRot] = useState(180);
-  console.log(rot);
   useEffect(() => {
+    if(rot === 0) return;
     const interval = setInterval(() => {
-        setRot((rot + 1) % 360);
-    }, 5);
+      const result = (rot + 10) % 360;
+      setRot(result);
+    }, 10);
 
     //Clearing the interval
     return () => clearInterval(interval);
-  }, [rot]);
-  const rotClass = rot <= 270 ? "rot-hidden" : "";
+  });
+  const rotClass = (rot <= 270 && rot !== 0) ? "rot-hidden" : "";
     return(
         <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div className={`game-card ${rotClass}`} style={{transform:`rotateY(${rot}deg)`}}>
