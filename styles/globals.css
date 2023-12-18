@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 .i-like-blue{
-	color: #b254e8
+	color: #94FBAB;
 }
 body {
 	font-size: 2rem;
 	min-height: 100vh;
 	position: relative;
-	background-color:#540c69;
+	background-color:#60435F;
 	color:white;
-	font-family:'Inter' sans-serif Arial;
 	margin-bottom:10rem;
 }
 

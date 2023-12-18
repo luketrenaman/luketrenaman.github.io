@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export interface ProjectCardProps{
     project: Project;
 }
-const SPIN = 0.5;
+const SPIN = 0.3;
 // What if every time a project card scrolled into view it spun around
 export function ProjectCard({ project }: ProjectCardProps){
     return(
