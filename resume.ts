@@ -25,10 +25,18 @@ export interface Project extends Timeline {
     description: string;
     thumbnail?: string;
 }
+export interface Organizer {
+    name: string;
+    website: string;
+}
+const organizers: Organizer = [{
+
+}];
 export interface Contest extends Timeline {
     link?: string;
     award?: string | string[];
     description?: string;
+    organizer: Organizer;
 }
 export interface Resume {
     courses: Course[],
@@ -178,16 +186,6 @@ export const resume: Resume = {
             thumbnail: "thumbnails/brain_food.png",
         },
         {
-            name: "Brain Food Wave Editor",
-            link: "https://luketrenaman.com/wave_editor",
-            type: "Other",
-            repo: "https://github.com/luketrenaman/wave_editor",
-            platforms: ["Desktop"],
-            description: "Wave editor for brain food",
-            start: new Date("Jun 30 2020"),
-            end: new Date("Jan 13, 2021"),
-        },
-        {
             name: "Mason Student Activities",
             ...studentActivities,
             link: "https://masonstudentactivities.github.io",
@@ -227,16 +225,6 @@ export const resume: Resume = {
             type: "Game",
             platforms: ["Desktop"],
             thumbnail: "thumbnails/snakemaze.png",
-        },
-        {
-            name: "Snake Maze Editor",
-            start: new Date("Jul 27 2019"),
-            end: new Date("Sep 14 2021"),
-            link: "https://luketrenaman.com/snakemaze/mazemake/",
-            repo: "https://github.com/luketrenaman/snakemaze/",
-            description: "Level editor for snake maze.",
-            type: "Game",
-            platforms: ["Desktop"],
         },
         {
             name: "Luketris",
@@ -314,6 +302,7 @@ export const resume: Resume = {
             description: "An experiment with developing 3D games",
             type: "Game",
             platforms: ["Desktop"],
+            thumbnail: "thumbnails/space_glider.png",
 
         },
         {
@@ -322,25 +311,8 @@ export const resume: Resume = {
             end: new Date("Jul 25 2019"),
             link: "https://github.com/luketrenaman/portals",
             description: "Minecraft plugin that allows the creation of portals that can connect to other players' portals",
+            thumbnail: "thumbnails/portals.png",
             type: "Web",
-            platforms: [],
-        },
-        {
-            name: "Minesweeper",
-            start: new Date("Nov 16, 2022"),
-            end: new Date("Jan 3 2023"),
-            link: "https://github.com/luketrenaman/minesweeper",
-            description: "Clone of the popular game minesweeper",
-            type: "Web",
-            platforms: ["Desktop"],
-        },
-        {
-            name: "Mirage opmodes",
-            start: new Date("Dec 11 2021"),
-            end: new Date("Feb 21 2022"),
-            link: "https://github.com/luketrenaman/mirage-opmodes/",
-            description: "I was on a robotics team for a bit",
-            type: "Other",
             platforms: [],
         },
         {
@@ -369,7 +341,26 @@ export const resume: Resume = {
             type: "Web",
             platforms: ["Desktop"],
             description: "Financial literacy simulator to teach kids about stocks",
+            thumbnail: "thumbnails/wahoo_finance.png",
             ...wwww,
+        },
+        {
+            name: "Minesweeper",
+            start: new Date("Nov 16, 2022"),
+            end: new Date("Jan 3 2023"),
+            link: "https://github.com/luketrenaman/minesweeper",
+            description: "Clone of the popular game minesweeper",
+            type: "Web",
+            platforms: ["Desktop"],
+        },
+        {
+            name: "Mirage opmodes",
+            start: new Date("Dec 11 2021"),
+            end: new Date("Feb 21 2022"),
+            link: "https://github.com/luketrenaman/mirage-opmodes/",
+            description: "I was on a robotics team for a bit",
+            type: "Other",
+            platforms: [],
         },
     ],
     contests: [

@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import '@/styles/bootstrap_grids.css'
+import '@/styles/bootstrap-grid.min.css'
 
 import type { AppProps } from 'next/app'
 

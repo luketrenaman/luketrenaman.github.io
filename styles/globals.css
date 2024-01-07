@@ -6,7 +6,6 @@
 	color: #94FBAB;
 }
 body {
-	font-size: 2rem;
 	min-height: 100vh;
 	position: relative;
 	background-color:#60435F;
@@ -23,15 +22,6 @@ header {
 	margin:0;
 	padding:0;
 }
-.header-s1{
-	font-size:32px;
-}
-.header-s2{
-	font-size:75px;
-}
-.header-s3{
-	font-size:24px;
-}
 footer {
    position:absolute;
    bottom:-10rem;
@@ -39,9 +29,9 @@ footer {
    height:10rem;   /* Height of the footer */
 }
 .tag{
-	font-size:16px;
 	padding:5px 9px;
-	color:white;
+	color:black;
+	font-weight:bold;
 	user-select:none;
 	cursor:pointer;
 }
@@ -49,7 +39,6 @@ footer {
 	position:absolute;
 	bottom:20px;
 	border:0;
-	font-size:16px;
 	padding:3px 8px;
 	color:white;
 	background-color:rgb(129, 129, 129);
@@ -61,11 +50,11 @@ footer {
 	box-shadow:0 5px 0 0 rgb(10, 10, 10);
 }
 .tag-game{
-	background-color:#003DDB;
+	background-color:#FFCF9C;
 	/* box-shadow:0 5px 0 0 #2819DA; */
 }
 .tag-code{
-	background-color:rgb(0, 219, 73);
+	background-color:#94FBAB;
 	/* box-shadow:0 5px 0 0 rgb(20, 173, 46); */
 }
 .tag-date{
@@ -74,7 +63,7 @@ footer {
 	color:white;
 }
 .tag-webpage{
-	background-color:rgb(212, 75, 75);
+	background-color:#4CC9F0;
 	/* box-shadow:0 5px 0 0 rgb(177, 68, 68); */
 }
 .game-card{
@@ -84,12 +73,10 @@ footer {
 	height:100%;
 }
 .game-title a{
-	font-size:26px;
 	font-weight:bold;
 	color:black;
 }
 .game-tagline{
-	font-size:20px;
 	margin:10px 0px 20px 0px;
 }
 .game-blurb{
@@ -97,7 +84,6 @@ footer {
 }
 .right-info{
 	float:right;
-	font-size:26px;
 	margin-left:5px;
 }
 
@@ -114,12 +100,11 @@ img{
 	width: 100%;
 }
 .wrapper>div{
-	margin-bottom:30px;
+	margin-bottom:20px;
 }
 .icon-container{
 	display:flex;
 	justify-content:space-between;
-	font-size:40px;
 	width:50%;
 	margin:0 auto;
 }
@@ -137,7 +122,6 @@ img{
 }
 .margin-side-vw{
 	margin:0 20vw;
-	font-size:18px;
 	color:#111;
 }
 hr{
