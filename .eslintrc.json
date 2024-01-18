@@ -1,3 +1,11 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "rules":{
+    "react/jsx-indent": ["warn", 2],
+    "indent": ["warn", 2],
+    "semi": ["warn", "always"],
+    "no-multi-spaces": "warn"
+  }
 }
