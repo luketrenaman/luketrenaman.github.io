@@ -31,10 +31,13 @@ export interface Organizer {
 }
 
 export interface Contest extends Timeline {
-    link?: string;
-    award?: string | string[];
+    link?: {
+      name: string;
+      url: string;
+    };
+    awards: string[];
     description?: string;
-    organizer: Organizer;
+    //organizer?: Organizer;
 }
 export interface Resume {
     courses: Course[],
@@ -100,12 +103,6 @@ const au2023 = {
 };;
 export const resume: Resume = {
   courses: [
-    {
-      name: "Project Euler",
-      start: new Date("Oct 7 2021"),
-      end: new Date("Dec 27 2021"),
-      institution: "https://projecteuler.net/"
-    },
     {
       name: "Book of Shaders",
       start: new Date("Dec 27 2020"),
@@ -366,66 +363,90 @@ export const resume: Resume = {
       name: "CincyHacks",
       start: new Date("Jan 25 2020"),
       end: new Date("Jan 26 2020"),
-      link: "https://devpost.com/software/forgotten-curse",
-      award: "Runner Up for Best Game",
+      link: {
+        name: "Forgotten Curse",
+        url: "https://devpost.com/software/forgotten-curse"
+      },
+      awards: ["Runner Up for Best Game"],
     },
     {
       name: "CincyHacks",
       start: new Date("Sep 22 2018"),
       end: new Date("Sep 23 2018"),
+      awards: [],
     },
     {
       name: "HackCincinnati",
       ...cloudkeys,
-      link: "https://devpost.com/software/cloud-keys",
-      award: "Best Startup Award Winner"
+      link: {
+        name: "Cloud Keys",
+        url: "https://devpost.com/software/cloud-keys"
+      },
+      awards: ["Best Startup Award Winner"],
     },
     {
       name: "Hoohacks",
       ...geofare,
       start: new Date("Mar 26 2022"),
       end: new Date("Mar 27 2022"),
-      link: "https://geofare.github.io/",
+      link: {
+        name: "GeoFare",
+        url: "https://geofare.github.io/"
+      },
+      awards: [],
     },
     {
       name: "RevUC",
       ...wwww,
       start: new Date("Feb 26 2022"),
       end: new Date("Feb 27 2022"),
-      link: "https://devpost.com/software/the-wage-worker-of-wall-street",
-      award: "Fifth Third - deFINe Award Winner"
+      link: {
+        name: "Wage Worker of Wall Street",
+        url: "https://devpost.com/software/the-wage-worker-of-wall-street"
+      },
+      awards: ["Fifth Third - deFINe Award Winner"],
     },
     {
       name: "HACK OHI/O",
       start: new Date("October 8 2022"),
       end: new Date("October 9 2022"),
-      link: "https://github.com/hackiolearning/hackiolearning.github.io",
+      link: {
+        name: "Square One",
+        url: "https://github.com/hackiolearning/hackiolearning.github.io",
+      },
+      awards: [],
     },
     {
       name: "Code For Good",
       start: new Date("November 3 2022"),
       end: new Date("November 4 2022"),
-      award: "Winner (Future Ready Five)",
+      awards: ["Winner (Future Ready Five)"],
     },
     {
       name: "Buckeye Programming Competition",
       start: new Date("October 28 2022"),
       end: new Date("October 30 2022"),
-      award: "First Place (OSU Division)",
-      link: "https://github.com/luketrenaman/BPC",
+      awards: ["First Place (OSU Division)"],
+      link: {
+        name: "Solutions",
+        url: "https://github.com/luketrenaman/BPC",
+      },
     },
     {
       name: "BuckeyeCTF",
       start: new Date("September 29 2023"),
       end: new Date("October 1 2023"),
-      link: "https://github.com/luketrenaman/bctf-2023",
-      award: "First Place (OSU Division)",
+      link: {
+        name: "Solutions",
+        url: "https://github.com/luketrenaman/bctf-2023"
+      },
+      awards: ["First Place (OSU Division)"],
     },
     {
       name: "Arcade of Code",
       start: new Date("September 23 2023"),
       end: new Date("September 23 2023"),
-      award: ["Code Golf Minigame Winner","Second Place (Overall)"],
+      awards: ["Code Golf Minigame Winner","Second Place (Overall)"],
     }
   ],
   jobs: [

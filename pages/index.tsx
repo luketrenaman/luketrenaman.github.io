@@ -35,6 +35,10 @@ export default function Home() {
       </div>
       <footer>
         <hr className="margin-side-vw" />
+        <a href="https://github.com/luketrenaman" title="GitHub"><i className="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/luke-trenaman-8854a11a3/" title="LinkedIn"><i className="fa fa-linkedin"></i></a>
+        <a href="https://stackoverflow.com/users/17460969/luke-trenaman" title="StackOverflow"><i className="fa fa-stack-overflow"></i></a>
+        <a href="https://www.hackerrank.com/profile/trenamanluke" title="HackerRank"><i className="fa fa-hackerrank"></i></a>
       </footer>
     </>
   );
