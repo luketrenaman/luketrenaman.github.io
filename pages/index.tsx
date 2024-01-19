@@ -4,7 +4,7 @@ import { CourseList } from '@/components/CourseList';
 import { ContestList } from '@/components/ContestList';
 import Head from 'next/head';
 import { AnimatedHeader } from '@/components/AnimatedHeader';
-
+import { SectionTitle } from "@/components/SectionTitle";
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
@@ -15,18 +15,15 @@ export default function Home() {
       </Head>
       <div className={inter.className}>
         <AnimatedHeader />
-        <main className="mx-auto">
-          <section className="container pb-4">
-            <p>
-              Let&apos;s start with the <span style={{color:"#94FBAB"}}><b>projects</b></span>.
-            </p>
-
-          </section>
+        <main>
           <section className="container">
+            <SectionTitle title="Projects"/>
             <ProjectsList />
+            <SectionTitle title="Courses"/>
             <div>
               <CourseList />
             </div>
+            <SectionTitle title="Contests"/>
             <div>
               <ContestList />
             </div>
