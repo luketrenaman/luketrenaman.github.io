@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .i-like-blue{
-	color: #94FBAB;
+	color: #CEF6C6;
 }
 body {
 	min-height: 100vh;
@@ -57,7 +57,7 @@ footer {
 	/* box-shadow:0 5px 0 0 #2819DA; */
 }
 .tag-code{
-	background-color:#94FBAB;
+	background-color:#CEF6C6;
 	/* box-shadow:0 5px 0 0 rgb(20, 173, 46); */
 }
 .tag-date{
