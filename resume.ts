@@ -418,8 +418,8 @@ export const resume: Resume = {
     },
     {
       name: "Code For Good",
-      start: new Date("November 3 2022"),
-      end: new Date("November 4 2022"),
+      start: new Date("November 3 2023"),
+      end: new Date("November 4 2023"),
       awards: ["Winner (Future Ready Five)"],
     },
     {

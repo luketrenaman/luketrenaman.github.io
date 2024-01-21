@@ -4,7 +4,9 @@ import { RowWrapper } from '../RowWrapper';
 export function ContestList(){
   return (
     <RowWrapper>
-      {resume.contests.map((contest, i) => <ContestCard contest={contest} key={i}/>)}
+      {resume.contests
+        .sort((a, b) => b.end.getTime() - a.end.getTime())
+        .map((contest, i) => <ContestCard contest={contest} key={i}/>)}
     </RowWrapper>
   );
 }

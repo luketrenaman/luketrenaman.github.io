@@ -5,9 +5,11 @@ export function CourseList(){
   return (
     <RowWrapper>
       {
-        resume.courses.map((course, i) => (
-          <CourseCard course={course} key={i}/>
-        ))
+        resume.courses
+          .sort((a, b) => b.end.getTime() - a.end.getTime())
+          .map((course, i) => (
+            <CourseCard course={course} key={i}/>
+          ))
       }
     </RowWrapper>
   );
