@@ -98,8 +98,8 @@ const sp2023 = {
   end: new Date("May 2 2023"),
 };;
 const au2023 = {
-  start: new Date("Aug 22 2022"),
-  end: new Date("December 15 2022"),
+  start: new Date("Aug 22 2023"),
+  end: new Date("December 15 2023"),
 };;
 export const resume: Resume = {
   courses: [
