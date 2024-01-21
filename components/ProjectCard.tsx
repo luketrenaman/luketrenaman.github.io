@@ -20,22 +20,21 @@ export function ProjectCard({ project }: ProjectCardProps){
       <div
         className="game-card"
       >
-            <div className="absolute top-0 right-0">
-              { project.repo && <a href={project.repo}><i className="fa fa-github right-info"></i></a> }
-              { project.platforms.includes("Desktop") && <i className="fa fa-desktop right-info"></i> }
-              { project.platforms.includes("Mobile") && <i className="fas fa-mobile-alt right-info"></i> }
-            </div>
-            {project.thumbnail && <div>
-              <a href={project.link}><img src={project.thumbnail} /></a>
-            </div> }
-            <div className="game-blurb box-shadow">
-              <div className="game-title mb-1">
-                <a href={project.link} className="text-xl">{project.name}</a>
-              </div>
-              <Tag type={project.type}/>
-              <DateTag date={project.end} />
-              <div className="game-tagline">{project.description}</div>
-            </div>
+        <div className="absolute top-0 right-0">
+          { project.repo && <a href={project.repo}><i className="fa fa-github right-info"></i></a> }
+          { project.platforms.includes("Desktop") && <i className="fa fa-desktop right-info"></i> }
+          { project.platforms.includes("Mobile") && <i className="fas fa-mobile-alt right-info"></i> }
+        </div>
+        {project.thumbnail && <div>
+          <a href={project.link}><img src={project.thumbnail} /></a>
+        </div> }
+        <div className="game-blurb box-shadow">
+          <div className="game-title mb-1">
+            <a href={project.link} className="text-xl">{project.name}</a>
+          </div>
+
+          <div className="game-tagline">{project.description}</div>
+        </div>
       </div>
     </motion.div>
   );
