@@ -49,9 +49,6 @@ footer {
 	background-color:rgb(56, 56, 56);
 	box-shadow:0 5px 0 0 rgb(10, 10, 10);
 }
-.box-shadow{
-	box-shadow: 3px 3px 0px #b9a8ff;
-}
 .tag-game{
 	background-color:#FFCF9C;
 	/* box-shadow:0 5px 0 0 #2819DA; */
@@ -73,6 +70,14 @@ footer {
 	background:#E7E4F3;
 	color:black;
 	height:100%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+:root {
+  --drop-shadow-color: #2f3116;
+}
+.game-card{
+	box-shadow: 4px 4px 5px var(--drop-shadow-color);
 }
 .game-title a{
 	font-weight:bold;
