@@ -4,6 +4,7 @@ import { getAbbrevMonth } from "@/util/date";
 import { motion } from "framer-motion";
 import { DateTag } from "./DateTag";
 import { useEffect, useState } from "react";
+
 export interface ProjectCardProps{
     project: Project;
 }
@@ -16,9 +17,9 @@ export function ProjectCard({ project }: ProjectCardProps){
       transition={{ duration: DURATION }}
       whileInView={{ opacity: 1 }}
       viewport={{"once":true}}
-      className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4  text-textComplement">
       <div
-        className="game-card"
+        className={`h-full bg-backgroundComplement shadow-[4px_4px_0px_var(--shadow-color)]`}
       >
         <div className="absolute top-0 right-0">
           { project.repo && <a href={project.repo}><i className="fa fa-github right-info"></i></a> }
@@ -26,14 +27,13 @@ export function ProjectCard({ project }: ProjectCardProps){
           { project.platforms.includes("Mobile") && <i className="fas fa-mobile-alt right-info"></i> }
         </div>
         {project.thumbnail && <div>
-          <a href={project.link}><img src={project.thumbnail} /></a>
+          <a href={project.link}><img className="w-full aspect-[315/230] object-cover" src={project.thumbnail} /></a>
         </div> }
-        <div className="game-blurb box-shadow">
-          <div className="game-title mb-1">
-            <a href={project.link} className="text-xl">{project.name}</a>
-          </div>
-
-          <div className="game-tagline">{project.description}</div>
+        <div className="py-3 px-2.5">
+          <h3 className="mb-1">
+            <a href={project.link} className="text-xl font-extrabold">{project.name}</a>
+          </h3>
+          <p className="mt-2">{project.description}</p>
         </div>
       </div>
     </motion.div>

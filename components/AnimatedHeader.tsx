@@ -10,25 +10,29 @@ export function AnimatedHeader(){
         initial={{ position: "relative", bottom: 0, right: 800, scale: 0.2 }}
         animate={{ bottom: 0, left: 0, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className="i-like-blue text-center text-6xl font-light">
+        className="text-center text-6xl font-light text-[#CEF6C6]">
         <span className="relative">
           <motion.div
-            initial={{ position: "absolute", backgroundColor: "#CEF6C6", width:0, height: 4, top:-200, left:-200 }}
+            className="absolute bg-[#CEF6C6]"
+            initial={{ width:0, height: 4, top:-200, left:-200 }}
             animate={{ width: 35, top:-50, left: -50 }}
             transition={{ duration: 0.7, delay:1.5 }}
           />
           <motion.div
-            initial={{ position: "absolute", backgroundColor: "#CEF6C6", width:4, height: 0, top:-200, left:-200 }}
+            className="absolute bg-[#CEF6C6]"
+            initial={{ width:4, height: 0, top:-200, left:-200 }}
             animate={{ height: 35, top:-50, left:-50 }}
             transition={{ duration: 0.7, delay:1.5 }}
           />
           <motion.div
-            initial={{ position: "absolute", backgroundColor: "#CEF6C6", width:0, height: 4, bottom:-200, right:-200 }}
+            className="absolute bg-[#CEF6C6]"
+            initial={{ width:0, height: 4, bottom:-200, right:-200 }}
             animate={{ width: 35, bottom: -50, right: -50 }}
             transition={{ duration: 0.7, delay:1.5 }}
           />
           <motion.div
-            initial={{ position: "absolute", backgroundColor: "#CEF6C6", width:4, height: 0, bottom:-200, right:-200 }}
+            className="absolute bg-[#CEF6C6]"
+            initial={{ width:4, height: 0, bottom:-200, right:-200 }}
             animate={{ height: 35, bottom: -50, right: -50 }}
             transition={{ duration: 0.7, delay:1.5 }}
           />

@@ -12,7 +12,7 @@ export default function Document() {
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <script defer src="https://kit.fontawesome.com/8f16aa06ce.js" crossOrigin="anonymous"></script>
       </Head>
-      <body>
+      <body className="min-h-screen relative bg-backgroundPrimary text-textPrimary mb-40">
         <Main />
         <NextScript/>
       </body>
