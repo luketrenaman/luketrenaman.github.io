@@ -1,9 +1,10 @@
 import { resume } from '@/resume';
-import { ProjectCard } from '@/components/ProjectCard';
+import { ProjectCard } from './ProjectCard';
+import { RowWrapper } from '../RowWrapper';
 export function ProjectsList(){
   return (
-    <div className="row flex items-stretch flex-wrap h-auto">
+    <RowWrapper>
       {resume.projects.map((project,i) => <ProjectCard key={i} project={project}/>)}
-    </div>
+    </RowWrapper>
   );
 }

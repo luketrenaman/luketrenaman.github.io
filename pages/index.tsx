@@ -1,7 +1,7 @@
 import {Inter} from "next/font/google";
-import { ProjectsList } from '@/components/ProjectsList';
-import { CourseList } from '@/components/CourseList';
-import { ContestList } from '@/components/ContestList';
+import { ProjectsList } from '@/components/project/ProjectsList';
+import { CourseList } from '@/components/course/CourseList';
+import { ContestList } from '@/components/contest/ContestList';
 import Head from 'next/head';
 import { AnimatedHeader } from '@/components/AnimatedHeader';
 import { SectionTitle } from "@/components/SectionTitle";
@@ -19,14 +19,14 @@ export default function Home() {
           <section className="container">
             <SectionTitle title="Projects"/>
             <ProjectsList />
-            <SectionTitle title="Courses"/>
-            <div>
-              <CourseList />
-            </div>
+          </section>
+          <section className="container">
             <SectionTitle title="Contests"/>
-            <div>
-              <ContestList />
-            </div>
+            <ContestList />
+          </section>
+          <section className="container">
+            <SectionTitle title="Courses"/>
+            <CourseList />
           </section>
         </main>
       </div>
