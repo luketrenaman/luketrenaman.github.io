@@ -4,4 +4,8 @@
 
 :root {
   --shadow-color: #66aed4;
+  --corner-size: 4px;
+  --corner-length: 35px;
+  --corner-start: -200px;
+  --corner-end: -50px;
 }
