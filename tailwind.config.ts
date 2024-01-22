@@ -12,11 +12,11 @@ const config: Config = {
         // background primary is color of the site's background
         backgroundPrimary: "#433679",
         // background complement is color of overlay content on the website
-        backgroundComplement: "#CEF6C6",
+        backgroundComplement: "#dcf5d7",
         // primary is color of the main text
         textPrimary: "#ffffff",
         // accent is color of the secondary text
-        textAccent: "#CEF6C6",
+        textAccent: "#dcf5d7",
         // text complement will work with background complement
         textComplement: "#000000",
         dropShadowColor: "#49A0CD"

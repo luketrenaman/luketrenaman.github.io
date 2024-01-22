@@ -7,8 +7,8 @@ export function AnimatedHeader(){
         Hello, I&apos;m
       </div>
       <motion.div
-        initial={{ position: "relative", bottom: 0, right: 800, scale: 0.2 }}
-        animate={{ bottom: 0, left: 0, scale: 1 }}
+        initial={{ position: "relative", bottom: 0, right: 800, scale: 0.2, rotateZ:270 }}
+        animate={{ bottom: 0, left: 0, scale: 1, rotateZ:360 }}
         transition={{ duration: 1.5 }}
         className="text-center text-6xl font-light">
         <span className="relative text-textPrimary">
