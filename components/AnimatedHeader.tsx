@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 export function AnimatedHeader(){
   return (
     <header className="my-52 mx-auto">
-      <div className="text-center text-lg">
+      <div className="text-center text-lg text-textAccent">
         Hello, I&apos;m
       </div>
       <motion.div
         initial={{ position: "relative", bottom: 0, right: 800, scale: 0.2 }}
         animate={{ bottom: 0, left: 0, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className="text-center text-6xl font-light text-[#CEF6C6]">
-        <span className="relative">
+        className="text-center text-6xl font-light">
+        <span className="relative text-textPrimary">
           <motion.div
             className="absolute bg-[#CEF6C6]"
             initial={{ width:0, height: 4, top:-200, left:-200 }}
@@ -39,12 +39,12 @@ export function AnimatedHeader(){
           Luke Trenaman
         </span>
       </motion.div>
-      <div className="text-lg text-center">
+      <div className="text-lg text-center text-textAccent">
         Welcome to my <motion.b
           initial={{ display:"none", opacity:0}}
           animate={{ display: "inline", opacity:1}}
           transition={{ duration: 1.0, delay: 2.5}}
-          style={{color: "#CEF6C6"}}>
+          className="text-textPrimary">
           epic
         </motion.b> website.</div>
     </header>
