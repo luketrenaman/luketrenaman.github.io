@@ -7,6 +7,12 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screen:{
+      "sm":{"min":"576px"},
+      "md":{"min":"768px"},
+      "lg":{"min":"992px"},
+      "xl":{"min":"1200px"},
+    },
     extend: {
       colors:{
         // background primary is color of the site's background

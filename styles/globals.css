@@ -4,8 +4,9 @@
 
 :root {
   --shadow-color: #66aed4;
-  --corner-size: 4px;
-  --corner-length: 35px;
-  --corner-start: -200px;
-  --corner-end: -50px;
+  --corner-length:25px;
+  /* min-width query to set corner length to 35px for 640*/
+  @media (min-width:640px) {
+    --corner-length:35px;
+  }
 }
