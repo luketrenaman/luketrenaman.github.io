@@ -1,15 +1,12 @@
 [submodule "snakemaze"]
-	path = snakemaze
+	path = public/snakemaze
 	url = https://github.com/luketrenaman/snakemaze.git
-[submodule "tetris"]
-	path = tetris
-	url = https://github.com/luketrenaman/tetris.git
 [submodule "luketris"]
-	path = luketris
+	path = public/luketris
 	url = https://github.com/luketrenaman/luketris.git
 [submodule "wave_editor"]
-	path = wave_editor
+	path = public/wave_editor
 	url = https://github.com/luketrenaman/wave_editor.git
 [submodule "archives"]
-	path = archives
+	path = public/archives
 	url = https://github.com/luketrenaman/archives.git
