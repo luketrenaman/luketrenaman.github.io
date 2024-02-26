@@ -1,5 +1,5 @@
 import { Player } from "@/components/player/Player";
 
 export default function Mazemake() {
-  return <Player src="https://code.luketrenaman.com/snakemaze/mazemake/"/>;
+  return <Player title="Snake Maze Level Editor" src="https://code.luketrenaman.com/snakemaze/mazemake/"/>;
 }

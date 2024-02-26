@@ -1,5 +1,5 @@
 import { Player } from "@/components/player/Player";
 
 export default function Ducksouls() {
-  return <Player src="https://code.luketrenaman.com/ducksouls/"/>;
+  return <Player title="Duck Souls" src="https://code.luketrenaman.com/ducksouls/"/>;
 }
