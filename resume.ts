@@ -343,7 +343,7 @@ export const resume: Resume = {
       name: "Minesweeper",
       start: new Date("Nov 16, 2022"),
       end: new Date("Jan 3 2023"),
-      link: "https://github.com/luketrenaman/minesweeper",
+      link: "https://code.luketrenaman.com/minesweeper",
       description: "Clone of the popular game minesweeper",
       type: "Web",
       platforms: ["Desktop"],
