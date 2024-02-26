@@ -13,3 +13,6 @@
 [submodule "archives"]
 	path = archives
 	url = https://github.com/luketrenaman/archives.git
+[submodule "minesweeper"]
+	path = minesweeper
+	url = https://github.com/luketrenaman/minesweeper
