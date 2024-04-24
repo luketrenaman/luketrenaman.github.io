@@ -84,23 +84,27 @@ const au2018 = {
 const au2019 = {
   start: new Date("Aug 17 2019"),
   end: new Date("Dec 20 2019"),
-};;
+};
 const sp2019 = {
   start: new Date("Jan 3 2019"),
   end: new Date("May 30 2019"),
-};;
+};
 const au2022 = {
   start: new Date("Aug 23 2022"),
   end: new Date("December 14 2022"),
-};;
+};
 const sp2023 = {
   start: new Date("Jan 9 2023"),
   end: new Date("May 2 2023"),
-};;
+};
 const au2023 = {
   start: new Date("Aug 22 2023"),
   end: new Date("December 15 2023"),
-};;
+};
+const sp2024 = {
+  start: new Date("Jan 08 2024"),
+  end: new Date("April 30 2024"),
+};
 export const resume: Resume = {
   courses: [
     {
@@ -167,7 +171,21 @@ export const resume: Resume = {
       ...au2023,
       institution: "The Ohio State University",
     },
-
+    {
+      name: "Systems 2",
+      ...sp2024,
+      institution: "The Ohio State University",
+    },
+    {
+      name: "Intro Database",
+      ...sp2024,
+      institution: "The Ohio State University",
+    },
+    {
+      name: "Gamedev Project",
+      ...sp2024,
+      institution: "The Ohio State University",
+    },
   ],
   projects: [
     {
