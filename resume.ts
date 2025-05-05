@@ -105,6 +105,18 @@ const sp2024 = {
   start: new Date("Jan 08 2024"),
   end: new Date("April 30 2024"),
 };
+
+const au2024 = {
+  start: new Date("Aug 20 2024"),
+  end: new Date("Dec 12 2024")
+};
+
+const sp2025 = {
+  start: new Date("Jan 6 2025"),
+  end: new Date("Apr 29 2025")
+}
+
+
 export const resume: Resume = {
   courses: [
     {
@@ -186,8 +198,53 @@ export const resume: Resume = {
       ...sp2024,
       institution: "The Ohio State University",
     },
+    {
+      name: "Info Security",
+      ...au2024,
+      institution: "The Ohio State University"
+    },
+    {
+      name: "Computer Game Animation",
+      ...au2024,
+      institution: "The Ohio State University"
+    },
+    {
+      name: "Principles of Programming Languages",
+      ...au2024,
+      institution: "The Ohio State University"
+    },
+    {
+      name: "Computer Networking",
+      ...au2024,
+      institution: "The Ohio State University"
+    },
+    {
+      name: "Intro to AI",
+      ...au2024,
+      institution: "The Ohio State University"
+    },
+    {
+      name: "Capstone: Gamedev",
+      ...sp2025,
+      institution: "The Ohio State University"
+    },
+    {
+      name: "Realtime Rendering",
+      ...sp2025,
+      institution: "The Ohio State University"
+    }
   ],
   projects: [
+    {
+      name: "Lunar Lock",
+      link: "https://luketrenaman.itch.io/lunar-lock",
+      type: "Game",
+      platforms: ["Desktop"],
+      description: "Escape from a lunar base in this fast paced, first person platformer.",
+      start: sp2025.start,
+      end: sp2025.end,
+      thumbnail: "thumbnails/lunar-lock.png"
+    },
     {
       name: "Brain Food",
       link: "https://brainfoodgame.github.io/",
@@ -198,25 +255,25 @@ export const resume: Resume = {
       end: new Date("Mar 12 2022"),
       thumbnail: "thumbnails/brain_food.png",
     },
-    {
-      name: "Mason Student Activities",
-      ...studentActivities,
-      link: "https://masonstudentactivities.github.io",
-      repo: "https://github.com/masonstudentactivities/masonstudentactivities.github.io",
-      type: "Web",
-      platforms: ["Desktop", "Mobile"],
-      description: "Volunteered at my school to redesign the student activities website.",
-      thumbnail: "thumbnails/site.png",
-    },
-    {
-      name: "INTERalliance",
-      ...interalliance,
-      link: "https://interalliance.org",
-      type: "Web",
-      platforms: ["Desktop", "Mobile"],
-      description: "Worked at INTERalliance to implement a redesigned website.",
-      thumbnail: "thumbnails/ia_site.png",
-    },
+    // {
+    //   name: "Mason Student Activities",
+    //   ...studentActivities,
+    //   link: "https://masonstudentactivities.github.io",
+    //   repo: "https://github.com/masonstudentactivities/masonstudentactivities.github.io",
+    //   type: "Web",
+    //   platforms: ["Desktop", "Mobile"],
+    //   description: "Volunteered at my school to redesign the student activities website.",
+    //   thumbnail: "thumbnails/site.png",
+    // },
+    // {
+    //   name: "INTERalliance",
+    //   ...interalliance,
+    //   link: "https://interalliance.org",
+    //   type: "Web",
+    //   platforms: ["Desktop", "Mobile"],
+    //   description: "Worked at INTERalliance to implement a redesigned website.",
+    //   thumbnail: "thumbnails/ia_site.png",
+    // },
     {
       name: "Rotator",
       link: "https://luketrenaman.com/rotator",
@@ -256,7 +313,7 @@ export const resume: Resume = {
       end: new Date("Aug 28 2021"),
       link: "https://luketrenaman.com/ducksouls",
       repo: "https://github.com/luketrenaman/ducksouls",
-      description: "A souls-like game featuring the amazing art of Gabe Salazar.",
+      description: "A duck-like game featuring the amazing art of Gabe Salazar.",
       type: "Game",
       platforms: ["Desktop"],
       thumbnail: "thumbnails/duck_souls.png",
@@ -328,53 +385,53 @@ export const resume: Resume = {
       type: "Other",
       platforms: [],
     },
-    {
-      name: "Cloud Keys",
-      link: "https://github.com/luketrenaman/cloudkeys",
-      description: "A realtime streaming service for MIDI keyboard performances.",
-      ...cloudkeys,
-      type: "Web",
-      platforms: ["Desktop"],
-      thumbnail: "thumbnails/cloud_keys.png",
-    },
-    {
-      name: "Geofare",
-      ...geofare,
-      description: "Food bank map made for HooHacks 2022.",
-      type: "Web",
-      platforms: ["Desktop", "Mobile"],
-      link: "https://geofare.github.io",
-      repo: "https://github.com/geofare/geofare.github.io",
-      thumbnail: "thumbnails/geofare.png",
-    },
-    {
-      name: "Wage Worker of Wall Street",
-      link: "https://ucstocks.github.io/",
-      repo: "https://github.com/ucstocks/ucstocks.github.io",
-      type: "Game",
-      platforms: ["Desktop"],
-      description: "Financial literacy simulator to teach kids about stocks",
-      thumbnail: "thumbnails/wahoo_finance.png",
-      ...wwww,
-    },
-    {
-      name: "Minesweeper",
-      start: new Date("Nov 16, 2022"),
-      end: new Date("Jan 3 2023"),
-      link: "https://luketrenaman.com/minesweeper",
-      description: "Clone of the popular game minesweeper",
-      type: "Web",
-      platforms: ["Desktop"],
-    },
-    {
-      name: "Mirage opmodes",
-      start: new Date("Dec 11 2021"),
-      end: new Date("Feb 21 2022"),
-      link: "https://github.com/luketrenaman/mirage-opmodes/",
-      description: "I was on a robotics team for a bit",
-      type: "Other",
-      platforms: [],
-    },
+    // {
+    //   name: "Cloud Keys",
+    //   link: "https://github.com/luketrenaman/cloudkeys",
+    //   description: "A realtime streaming service for MIDI keyboard performances.",
+    //   ...cloudkeys,
+    //   type: "Web",
+    //   platforms: ["Desktop"],
+    //   thumbnail: "thumbnails/cloud_keys.png",
+    // },
+    // {
+    //   name: "Geofare",
+    //   ...geofare,
+    //   description: "Food bank map made for HooHacks 2022.",
+    //   type: "Web",
+    //   platforms: ["Desktop", "Mobile"],
+    //   link: "https://geofare.github.io",
+    //   repo: "https://github.com/geofare/geofare.github.io",
+    //   thumbnail: "thumbnails/geofare.png",
+    // },
+    // {
+    //   name: "Wage Worker of Wall Street",
+    //   link: "https://ucstocks.github.io/",
+    //   repo: "https://github.com/ucstocks/ucstocks.github.io",
+    //   type: "Game",
+    //   platforms: ["Desktop"],
+    //   description: "Financial literacy simulator to teach kids about stocks",
+    //   thumbnail: "thumbnails/wahoo_finance.png",
+    //   ...wwww,
+    // },
+    // {
+    //   name: "Minesweeper",
+    //   start: new Date("Nov 16, 2022"),
+    //   end: new Date("Jan 3 2023"),
+    //   link: "https://luketrenaman.com/minesweeper",
+    //   description: "Clone of the popular game minesweeper",
+    //   type: "Web",
+    //   platforms: ["Desktop"],
+    // },
+    // {
+    //   name: "Mirage opmodes",
+    //   start: new Date("Dec 11 2021"),
+    //   end: new Date("Feb 21 2022"),
+    //   link: "https://github.com/luketrenaman/mirage-opmodes/",
+    //   description: "I was on a robotics team for a bit",
+    //   type: "Other",
+    //   platforms: [],
+    // },
   ],
   contests: [
     {
@@ -465,6 +522,12 @@ export const resume: Resume = {
       start: new Date("September 23 2023"),
       end: new Date("September 23 2023"),
       awards: ["Code Golf Minigame Winner","Second Place (Overall)"],
+    },
+    {
+      name: "BuckeyeCTF",
+      start: new Date("September 27 2024"),
+      end: new Date("September 29 2024"),
+      awards: ["Third Place (OSU Division)"]
     }
   ],
   jobs: [
