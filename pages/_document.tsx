@@ -10,7 +10,6 @@ export default function Document() {
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
         <link rel="author" href="https://github.com/luketrenaman" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <script defer src="https://kit.fontawesome.com/8976e50070.js" crossOrigin="anonymous"></script>
       </Head>
       <body className="min-h-screen relative bg-backgroundPrimary text-textPrimary">
         <Main />

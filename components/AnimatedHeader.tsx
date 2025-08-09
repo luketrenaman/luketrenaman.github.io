@@ -47,8 +47,8 @@ export function AnimatedHeader(){
       </motion.div>
       <div className="text-lg text-center text-textAccent">
         Welcome to my <motion.b
-          initial={{ display:"none", opacity:0}}
-          animate={{ display: "inline", opacity:1}}
+          initial={{ display:"none", color:"rgba(255, 255, 255, 0)"}}
+          animate={{ display: "inline", color:"rgba(255, 255, 255, 1)"}}
           transition={{ duration: 1.0, delay: 2.5}}
           className="text-textPrimary">
           epic

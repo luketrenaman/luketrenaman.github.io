@@ -21,14 +21,6 @@ export default function Home() {
             <SectionTitle title="Projects"/>
             <ProjectsList />
           </section>
-          {/* <section className="container">
-            <SectionTitle title="Contests"/>
-            <ContestList />
-          </section>
-          <section className="container">
-            <SectionTitle title="Courses"/>
-            <CourseList />
-          </section> */}
         </main>
       </div>
       <Footer />
