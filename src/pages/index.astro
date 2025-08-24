@@ -1,0 +1,17 @@
+---
+import AnimatedHeader from '../components/AnimatedHeader.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import ProjectsList from '../components/project/ProjectsList.astro';
+import Footer from '../components/Footer.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout>
+    <AnimatedHeader />
+    <main>
+      <section class="container">
+        <SectionTitle title="Projects" />
+        <ProjectsList />
+      </section>
+    </main>
+    <Footer />
+</MainLayout>

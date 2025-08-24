@@ -1,0 +1,8 @@
+---
+import { getAbbrevMonthWithPeriod, getDayAbbrev, getFullMonth } from '../util/date';
+const { date } = Astro.props;
+const year = date.getFullYear();
+---
+<span class="tag tag-date" title={`Finished on ${getFullMonth(date)} ${getDayAbbrev(date)}, ${year}`}>
+  {getAbbrevMonthWithPeriod(date)} {year}
+</span>

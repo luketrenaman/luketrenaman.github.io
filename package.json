@@ -1,0 +1,24 @@
+{
+  "name": "luketrenaman.com",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-next": "15.4.6",
+    "eslint-plugin-react": "^7.33.2",
+    "postcss": "^8",
+    "tailwindcss": "^4.1.12",
+    "typescript": "^5"
+  }
+}

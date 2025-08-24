@@ -1,0 +1,84 @@
+<header class="my-52 mx-auto animated-header-wrapper">
+  <div class="text-center text-lg text-textAccent">
+    Hello, I'm
+  </div>
+
+  <div class="animated-header text-center">
+    <span class="relative text-textPrimary text-3xl sm:text-6xl font-bold inline-block">
+      <div class="corner corner-tl-h absolute bg-textAccent"></div>
+      <div class="corner corner-tl-v absolute bg-textAccent"></div>
+
+      <div class="corner corner-br-h absolute bg-textAccent"></div>
+      <div class="corner corner-br-v absolute bg-textAccent"></div>
+
+      Luke Trenaman
+    </span>
+  </div>
+
+  <div class="text-lg text-center text-textAccent">
+    Welcome to my <b class="epic-word text-textPrimary">epic</b> website.
+  </div>
+</header>
+
+<style>
+  :root {
+    --corner-length: 75px;
+  }
+
+  .animated-header-wrapper {
+    padding: 0 2.5rem; /* 40px padding on left and right */
+    position: relative;
+    overflow-x: clip;
+  }
+
+  @keyframes animate-header {
+    from { transform: translateX(-800px) scale(0.2) rotate(270deg); opacity: 0; }
+    to { transform: translateX(0) scale(1) rotate(360deg); opacity: 1; }
+  }
+  @keyframes animate-tl-h {
+    from { width: 0; transform: translate(-100px, -100px); opacity: 0; }
+    to { width: var(--corner-length); transform: translate(0, 0); opacity: 1; }
+  }
+  @keyframes animate-tl-v {
+    from { height: 0; transform: translate(-100px, -100px); opacity: 0; }
+    to { height: var(--corner-length); transform: translate(0, 0); opacity: 1; }
+  }
+  @keyframes animate-br-h {
+    from { width: 0; transform: translate(100px, 100px); opacity: 0; }
+    to { width: var(--corner-length); transform: translate(0, 0); opacity: 1; }
+  }
+  @keyframes animate-br-v {
+    from { height: 0; transform: translate(100px, 100px); opacity: 0; }
+    to { height: var(--corner-length); transform: translate(0, 0); opacity: 1; }
+  }
+  @keyframes reveal-and-fade-in {
+    from { opacity: 0; max-width: 0; }
+    to { opacity: 1; max-width: 100px; }
+  }
+
+  .animated-header {
+    animation: animate-header 2s ease-out forwards;
+  }
+
+  .corner {
+    animation-duration: 0.7s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+  
+  .corner-tl-h { top: -40px; left: -50px; height: 4px; animation-name: animate-tl-h; }
+  .corner-tl-v { top: -40px; left: -50px; width: 4px; animation-name: animate-tl-v; }
+  .corner-br-h { bottom: -40px; right: -50px; height: 4px; animation-name: animate-br-h; }
+  .corner-br-v { bottom: -40px; right: -50px; width: 4px; animation-name: animate-br-v; }
+
+  .epic-word {
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 0;
+    opacity: 0;
+    animation: reveal-and-fade-in 1.0s linear 2.8s forwards;
+  }
+</style>

@@ -1,0 +1,12 @@
+---
+import {resume} from '../../util/resume';
+import RowWrapper from '../RowWrapper.astro';
+import CourseCard from './CourseCard.astro';
+---
+<RowWrapper>
+  {
+    resume.courses
+      .sort((a, b) => b.end.getTime() - a.end.getTime())
+      .map((course, i) => <CourseCard course={course} />)
+  }
+</RowWrapper>

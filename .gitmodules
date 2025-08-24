@@ -1,18 +1,15 @@
-[submodule "snakemaze"]
-	path = snakemaze
-	url = https://github.com/luketrenaman/snakemaze.git
-[submodule "tetris"]
-	path = tetris
-	url = https://github.com/luketrenaman/tetris.git
-[submodule "luketris"]
-	path = luketris
-	url = https://github.com/luketrenaman/luketris.git
-[submodule "wave_editor"]
-	path = wave_editor
-	url = https://github.com/luketrenaman/wave_editor.git
-[submodule "archives"]
-	path = archives
+[submodule "public/archives"]
+	path = public/archives
 	url = https://github.com/luketrenaman/archives.git
-[submodule "minesweeper"]
-	path = minesweeper
-	url = https://github.com/luketrenaman/minesweeper
+[submodule "public/luketris"]
+	path = public/luketris
+	url = https://github.com/luketrenaman/luketris.git
+[submodule "public/minesweeper"]
+	path = public/minesweeper
+	url = https://github.com/luketrenaman/minesweeper.git
+[submodule "public/snakemaze"]
+	path = public/snakemaze
+	url = https://github.com/luketrenaman/snakemaze.git
+[submodule "public/wave_editor"]
+	path = public/wave_editor
+	url = https://github.com/luketrenaman/wave_editor.git
