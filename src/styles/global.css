@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
-@import "tailwindcss";
+ @font-face { font-family: Inter; src: url('/Inter.woff2'); } 
+ @font-face { font-family: Inter; font-weight: 700; src: url('/Inter.woff2');}
+ @font-face { font-family: Inter; font-weight: 800; src: url('/Inter.woff2');}
+ @import "tailwindcss";
 
 :root {
   --shadow-color: #66aed4;
