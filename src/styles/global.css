@@ -1,7 +1,10 @@
- @font-face { font-family: Inter; src: url('/Inter.woff2'); } 
- @font-face { font-family: Inter; font-weight: 700; src: url('/Inter.woff2');}
- @font-face { font-family: Inter; font-weight: 800; src: url('/Inter.woff2');}
- @import "tailwindcss";
+@font-face {
+  font-family: 'Inter';
+  src: url('/Inter.woff2') format('woff2');
+  font-weight: 500 700 800;
+}
+
+@import "tailwindcss";
 
 :root {
   --shadow-color: #66aed4;
@@ -12,7 +15,6 @@
   }
 }
 @theme {
-  --font-sans: 'Inter', 'sans-serif';
   --color-mint-500: #00ff00;
   --color-backgroundPrimary: #433679;
   --color-backgroundComplement: #dcf5d7;
