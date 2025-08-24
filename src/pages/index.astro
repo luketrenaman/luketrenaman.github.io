@@ -3,12 +3,9 @@ import AnimatedHeader from '../components/AnimatedHeader.astro';
 import SectionTitle from '../components/SectionTitle.astro';
 import ProjectsList from '../components/project/ProjectsList.astro';
 import Footer from '../components/Footer.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 ---
-<html lang="en">
-  <head>
-    <title>luketrenaman.com | luke trenaman but website</title>
-  </head>
-  <body>
+<MainLayout>
     <AnimatedHeader />
     <main>
       <section class="container">
@@ -17,5 +14,4 @@ import Footer from '../components/Footer.astro';
       </section>
     </main>
     <Footer />
-  </body>
-</html>
+</MainLayout>

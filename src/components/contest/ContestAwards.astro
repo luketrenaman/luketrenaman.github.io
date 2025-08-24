@@ -2,7 +2,7 @@
 const { awards } = Astro.props;
 ---
 <div>
-  {awards.map((award, i) => (
+  {awards.map((award: string) => (
     <p><i class="fa fa-award"></i> {award}</p>
   ))}
 </div>

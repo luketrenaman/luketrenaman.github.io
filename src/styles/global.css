@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --shadow-color: #66aed4;
+  --corner-length:25px;
+  /* min-width query to set corner length to 35px for 640*/
+  @media (min-width:640px) {
+    --corner-length:35px;
+  }
+}
+@theme {
+  --color-mint-500: #00ff00;
+  --color-backgroundPrimary: #433679;
+  --color-backgroundComplement: #dcf5d7;
+  --color-textPrimary: #ffffff;
+  --color-textAccent: #dcf5d7;
+  --color-textComplement: #000000;
+  --color-dropShadow: #49A0CD;
+}

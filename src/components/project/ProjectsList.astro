@@ -1,8 +1,9 @@
 ---
-import resume from '../../util/resume';
+import {resume} from '../../util/resume';
 import ProjectCard from './ProjectCard.astro';
 import RowWrapper from '../RowWrapper.astro';
 ---
+
 <RowWrapper>
   {resume.projects.map((project, i) => <ProjectCard project={project} />)}
 </RowWrapper>

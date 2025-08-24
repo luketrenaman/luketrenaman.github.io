@@ -1,5 +1,7 @@
 ---
-const { title = 'luketrenaman.com | luke trenaman but website', children } = Astro.props;
+const { title = 'luketrenaman.com | luke trenaman but website' } = Astro.props;
+import '../styles/global.css';
+import '../styles/bootstrap-grid.min.css'
 ---
 <html lang="en">
   <head>
@@ -10,11 +12,9 @@ const { title = 'luketrenaman.com | luke trenaman but website', children } = Ast
     <link rel="author" href="https://github.com/luketrenaman" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>{title}</title>
-    <link rel="stylesheet" href="/styles/globals.css" />
-    <link rel="stylesheet" href="/styles/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body class="min-h-screen relative bg-backgroundPrimary text-textPrimary">
-    {children}
+    <slot />
   </body>
 </html>
