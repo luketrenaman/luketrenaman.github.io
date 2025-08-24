@@ -1,0 +1,33 @@
+---
+// 1. Import your data and components
+import MainLayout from '../layouts/MainLayout.astro';
+import Player from '../components/player/Player.astro';
+import { resume } from '../util/resume.ts';
+
+// 2. The getStaticPaths function tells Astro which pages to build
+export async function getStaticPaths() {
+    const getLastItemInPath = (path: string) => {
+    const segments = path.split('/');
+    if(segments[segments.length - 1] === "index.html"){
+        segments.pop();
+    }
+    return segments[segments.length - 1];
+    };
+
+  return resume.projects
+  .filter(project => project.link[0] === "/")
+  .map(project => {
+    return {
+      params: { slug: getLastItemInPath(project.link) }, // This sets the URL part, e.g., /projects/wave-editor
+      props: { project }              // This passes the full project object to the page
+    };
+  });
+}
+
+// 3. Get the specific project data for this page from Astro.props
+const { project } = Astro.props;
+---
+<!-- 4. Use the project data to render your layout and component -->
+<MainLayout title={project.name}>
+	<Player title={project.name} src={project.link} />
+</MainLayout>
