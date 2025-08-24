@@ -1,0 +1,15 @@
+[submodule "public/archives"]
+	path = public/archives
+	url = https://github.com/luketrenaman/archives.git
+[submodule "public/luketris"]
+	path = public/luketris
+	url = https://github.com/luketrenaman/luketris.git
+[submodule "public/minesweeper"]
+	path = public/minesweeper
+	url = https://github.com/luketrenaman/minesweeper.git
+[submodule "public/snakemaze"]
+	path = public/snakemaze
+	url = https://github.com/luketrenaman/snakemaze.git
+[submodule "public/wave_editor"]
+	path = public/wave_editor
+	url = https://github.com/luketrenaman/wave_editor.git
