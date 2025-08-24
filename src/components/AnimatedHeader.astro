@@ -1,4 +1,3 @@
-{/* FIX: Added a wrapper class and padding to the header to prevent clipping on mobile */}
 <header class="my-52 mx-auto animated-header-wrapper">
   <div class="text-center text-lg text-textAccent">
     Hello, I'm
@@ -6,14 +5,12 @@
 
   <div class="animated-header text-center">
     <span class="relative text-textPrimary text-3xl sm:text-6xl font-bold inline-block">
-      {/* Top-Left Corner */}
-      <div class="corner corner-tl-h absolute bg-[#CEF6C6]"></div>
-      <div class="corner corner-tl-v absolute bg-[#CEF6C6]"></div>
-      
-      {/* Bottom-Right Corner */}
-      <div class="corner corner-br-h absolute bg-[#CEF6C6]"></div>
-      <div class="corner corner-br-v absolute bg-[#CEF6C6]"></div>
-      
+      <div class="corner corner-tl-h absolute bg-textAccent"></div>
+      <div class="corner corner-tl-v absolute bg-textAccent"></div>
+
+      <div class="corner corner-br-h absolute bg-textAccent"></div>
+      <div class="corner corner-br-v absolute bg-textAccent"></div>
+
       Luke Trenaman
     </span>
   </div>
@@ -28,18 +25,12 @@
     --corner-length: 75px;
   }
 
-  /* 
-    FIX: Added a wrapper with padding. This is the main fix.
-    It creates "breathing room" on the sides so the corners aren't drawn off-screen.
-    'clip' is a more performant version of 'hidden' for overflow.
-  */
   .animated-header-wrapper {
     padding: 0 2.5rem; /* 40px padding on left and right */
     position: relative;
     overflow-x: clip;
   }
 
-  /* KEYFRAME ANIMATIONS (Unchanged from previous version) */
   @keyframes animate-header {
     from { transform: translateX(-800px) scale(0.2) rotate(270deg); opacity: 0; }
     to { transform: translateX(0) scale(1) rotate(360deg); opacity: 1; }
@@ -65,7 +56,6 @@
     to { opacity: 1; max-width: 100px; }
   }
 
-  /* APPLYING THE ANIMATIONS */
   .animated-header {
     animation: animate-header 2s ease-out forwards;
   }
@@ -77,10 +67,6 @@
     animation-timing-function: ease-out;
   }
   
-  /* 
-    FIX: Adjusted corner positions to be tighter and look better on mobile,
-    matching your screenshot more closely.
-  */
   .corner-tl-h { top: -40px; left: -50px; height: 4px; animation-name: animate-tl-h; }
   .corner-tl-v { top: -40px; left: -50px; width: 4px; animation-name: animate-tl-v; }
   .corner-br-h { bottom: -40px; right: -50px; height: 4px; animation-name: animate-br-h; }
