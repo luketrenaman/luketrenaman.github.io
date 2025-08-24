@@ -10,7 +10,7 @@ const path = getLocalPathOrDefaultExternal(project.link);
     {project.thumbnail && (
       <div>
         <a aria-label={`Click to ${verbBasedOnType} ${project.name}`} href={path}>
-          <img loading="lazy" alt={project.alt} class="w-full aspect-[315/230] object-cover bg-white" src={project.thumbnail} />
+          <img alt={project.alt} class="w-full aspect-[315/230] object-cover bg-white" src={project.thumbnail} />
         </a>
       </div>
     )}
