@@ -8,6 +8,7 @@ export interface ProjectCardProps{
 const DURATION = 0.5;
 // What if every time a project card scrolled into view it spun around
 export function ProjectCard({ project }: ProjectCardProps){
+  const verbBasedOnType = project.type === "Game" ? "play" : "explore";
   return(
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,7 +18,7 @@ export function ProjectCard({ project }: ProjectCardProps){
       className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4">
       <Card>
         {project.thumbnail && <div>
-          <a href={project.link}><img className="w-full aspect-[315/230] object-cover bg-white" src={project.thumbnail} /></a>
+          <a aria-label={`Click to ${verbBasedOnType} ${project.name}`} href={project.link}><img alt={project.alt} className="w-full aspect-[315/230] object-cover bg-white" src={project.thumbnail} /></a>
         </div> }
         <div className="py-3 px-2.5">
           <h3 className="mb-1">

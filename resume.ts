@@ -24,6 +24,7 @@ export interface Project extends Timeline {
     repo?: string; //if no deploy, repo can be inferred from above
     description: string;
     thumbnail?: string;
+    alt: string;
 }
 export interface Organizer {
     name: string;
@@ -243,7 +244,8 @@ export const resume: Resume = {
       description: "Escape from a lunar base in this fast paced, first person platformer.",
       start: sp2025.start,
       end: sp2025.end,
-      thumbnail: "thumbnails/lunar-lock.webp"
+      thumbnail: "thumbnails/lunar-lock.webp",
+      alt: "The title graphic for 'Lunar Lock,' displaying a hand-drawn illustration of the moon shaped like a padlock next to the game's name against a starry sky."
     },
     {
       name: "Brain Food",
@@ -254,6 +256,7 @@ export const resume: Resume = {
       start: new Date("Mar 30 2020"),
       end: new Date("Mar 12 2022"),
       thumbnail: "thumbnails/brain_food.webp",
+      alt: "Pixel art of a rundown storefront named 'BRAIN FOOD,' featuring a large burger sign and a boarded-up window, in a post-apocalyptic or zombie setting."
     },
     // {
     //   name: "Mason Student Activities",
@@ -284,6 +287,7 @@ export const resume: Resume = {
       platforms: ["Desktop", "Mobile"],
       description: "A bullet hell where you control the bullets.",
       thumbnail: "thumbnails/rotator.webp",
+      alt: "The game Rotator, featuring a purple circle orbited by small orange triangles on a white background."
     },
     {
       name: "Snake Maze",
@@ -295,6 +299,7 @@ export const resume: Resume = {
       type: "Game",
       platforms: ["Desktop"],
       thumbnail: "thumbnails/snakemaze.webp",
+      alt: "The title screen for the pixel-art game 'Snake Maze,' with a green snake winding through the letters."
     },
     {
       name: "Luketris",
@@ -306,6 +311,7 @@ export const resume: Resume = {
       type: "Game",
       platforms: ["Desktop"],
       thumbnail: "thumbnails/luketris.webp",
+      alt: "A graphic for Luketris, combining a person in a headstand with a Tetris-style red, yellow, and white grid."
     },
     {
       name: "Duck Souls",
@@ -317,6 +323,7 @@ export const resume: Resume = {
       type: "Game",
       platforms: ["Desktop"],
       thumbnail: "thumbnails/duck_souls.webp",
+      alt: "The pixelated, gothic-style logo for the game 'Duck Souls' on a black background."
     },
     // TODO: add more accurate dates for archives
     {
@@ -329,6 +336,7 @@ export const resume: Resume = {
       type: "Game",
       platforms: ["Desktop"],
       thumbnail: "thumbnails/tandem.webp",
+      alt: "A two-player rhythm game showing falling blocks on vertical lanes, keyboard inputs, and player scores."
     },
     {
       name: "Ukulele Chord Generator",
@@ -340,6 +348,7 @@ export const resume: Resume = {
       type: "Web",
       platforms: ["Desktop", "Mobile"],
       thumbnail: "thumbnails/ukulele.webp",
+      alt: "A musical chord diagram showing finger placements with colored dots on a dark fretboard."
     },
     {
       name: "Platformer Engine",
@@ -351,6 +360,7 @@ export const resume: Resume = {
       type: "Game",
       platforms: ["Desktop"],
       thumbnail: "thumbnails/platformer.webp",
+      alt: "A minimalist platformer game showing a blue square character on orange and green platforms against a dark background."
     },
     {
       name: "Conway's Game",
@@ -362,6 +372,7 @@ export const resume: Resume = {
       type: "Web",
       platforms: ["Desktop", "Mobile"],
       thumbnail: "thumbnails/conways.webp",
+      alt: "A random, static-like pattern of black and white pixels."
     },
     {
       name: "Space Glider",
@@ -373,7 +384,7 @@ export const resume: Resume = {
       type: "Game",
       platforms: ["Desktop"],
       thumbnail: "thumbnails/space_glider.webp",
-
+      alt: "A 3D abstract scene showing a small, white and red character amidst a chaotic explosion of white spheres and cubes on a black background."
     },
     {
       name: "Portals Plugin",
@@ -384,6 +395,7 @@ export const resume: Resume = {
       thumbnail: "thumbnails/portals.webp",
       type: "Other",
       platforms: [],
+      alt: "A Minecraft screenshot of a small obsidian portal in a stone cave, marked by a sign that reads '[Portal] TheCavern'."
     },
     // {
     //   name: "Cloud Keys",
