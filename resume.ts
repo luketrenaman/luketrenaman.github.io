@@ -244,7 +244,7 @@ export const resume: Resume = {
       description: "Escape from a lunar base in this fast paced, first person platformer.",
       start: sp2025.start,
       end: sp2025.end,
-      thumbnail: "thumbnails/lunar-lock.webp",
+      thumbnail: "/thumbnails/lunar-lock.webp",
       alt: "The title graphic for 'Lunar Lock,' displaying a hand-drawn illustration of the moon shaped like a padlock next to the game's name against a starry sky."
     },
     {
@@ -255,7 +255,7 @@ export const resume: Resume = {
       description: "Build and launch burgers in a post-apocalyptic diner.",
       start: new Date("Mar 30 2020"),
       end: new Date("Mar 12 2022"),
-      thumbnail: "thumbnails/brain_food.webp",
+      thumbnail: "/thumbnails/brain_food.webp",
       alt: "Pixel art of a rundown storefront named 'BRAIN FOOD,' featuring a large burger sign and a boarded-up window, in a post-apocalyptic or zombie setting."
     },
     // {
@@ -266,7 +266,7 @@ export const resume: Resume = {
     //   type: "Web",
     //   platforms: ["Desktop", "Mobile"],
     //   description: "Volunteered at my school to redesign the student activities website.",
-    //   thumbnail: "thumbnails/site.webp",
+    //   thumbnail: "/thumbnails/site.webp",
     // },
     // {
     //   name: "INTERalliance",
@@ -275,7 +275,7 @@ export const resume: Resume = {
     //   type: "Web",
     //   platforms: ["Desktop", "Mobile"],
     //   description: "Worked at INTERalliance to implement a redesigned website.",
-    //   thumbnail: "thumbnails/ia_site.webp",
+    //   thumbnail: "/thumbnails/ia_site.webp",
     // },
     {
       name: "Rotator",
@@ -286,7 +286,7 @@ export const resume: Resume = {
       type: "Game",
       platforms: ["Desktop", "Mobile"],
       description: "A bullet hell where you control the bullets.",
-      thumbnail: "thumbnails/rotator.webp",
+      thumbnail: "/thumbnails/rotator.webp",
       alt: "The game Rotator, featuring a purple circle orbited by small orange triangles on a white background."
     },
     {
@@ -298,7 +298,7 @@ export const resume: Resume = {
       description: "Snake, but a maze! Get the gems to escape.",
       type: "Game",
       platforms: ["Desktop"],
-      thumbnail: "thumbnails/snakemaze.webp",
+      thumbnail: "/thumbnails/snakemaze.webp",
       alt: "The title screen for the pixel-art game 'Snake Maze,' with a green snake winding through the letters."
     },
     {
@@ -310,7 +310,7 @@ export const resume: Resume = {
       description: "Tetris, but I’m the pieces!",
       type: "Game",
       platforms: ["Desktop"],
-      thumbnail: "thumbnails/luketris.webp",
+      thumbnail: "/thumbnails/luketris.webp",
       alt: "A graphic for Luketris, combining a person in a headstand with a Tetris-style red, yellow, and white grid."
     },
     {
@@ -322,7 +322,7 @@ export const resume: Resume = {
       description: "A duck-like game featuring the amazing art of Gabe Salazar.",
       type: "Game",
       platforms: ["Desktop"],
-      thumbnail: "thumbnails/duck_souls.webp",
+      thumbnail: "/thumbnails/duck_souls.webp",
       alt: "The pixelated, gothic-style logo for the game 'Duck Souls' on a black background."
     },
     // TODO: add more accurate dates for archives
@@ -335,7 +335,7 @@ export const resume: Resume = {
       description: "A cooperative rhythm game featuring original music.",
       type: "Game",
       platforms: ["Desktop"],
-      thumbnail: "thumbnails/tandem.webp",
+      thumbnail: "/thumbnails/tandem.webp",
       alt: "A two-player rhythm game showing falling blocks on vertical lanes, keyboard inputs, and player scores."
     },
     {
@@ -347,7 +347,7 @@ export const resume: Resume = {
       description: "A useful utility for determining ukulele chord charts.",
       type: "Web",
       platforms: ["Desktop", "Mobile"],
-      thumbnail: "thumbnails/ukulele.webp",
+      thumbnail: "/thumbnails/ukulele.webp",
       alt: "A musical chord diagram showing finger placements with colored dots on a dark fretboard."
     },
     {
@@ -359,7 +359,7 @@ export const resume: Resume = {
       description: "A custom platformer engine with camera interpolation and physics.",
       type: "Game",
       platforms: ["Desktop"],
-      thumbnail: "thumbnails/platformer.webp",
+      thumbnail: "/thumbnails/platformer.webp",
       alt: "A minimalist platformer game showing a blue square character on orange and green platforms against a dark background."
     },
     {
@@ -371,7 +371,7 @@ export const resume: Resume = {
       description: "A small simulation of the Conway's Game Of Life simulation.",
       type: "Web",
       platforms: ["Desktop", "Mobile"],
-      thumbnail: "thumbnails/conways.webp",
+      thumbnail: "/thumbnails/conways.webp",
       alt: "A random, static-like pattern of black and white pixels."
     },
     {
@@ -383,7 +383,7 @@ export const resume: Resume = {
       description: "An experiment with developing 3D games",
       type: "Game",
       platforms: ["Desktop"],
-      thumbnail: "thumbnails/space_glider.webp",
+      thumbnail: "/thumbnails/space_glider.webp",
       alt: "A 3D abstract scene showing a small, white and red character amidst a chaotic explosion of white spheres and cubes on a black background."
     },
     {
@@ -392,7 +392,7 @@ export const resume: Resume = {
       end: new Date("Jul 25 2019"),
       link: "https://github.com/luketrenaman/portals",
       description: "Minecraft plugin that allows the creation of portals that can connect to other players' portals",
-      thumbnail: "thumbnails/portals.webp",
+      thumbnail: "/thumbnails/portals.webp",
       type: "Other",
       platforms: [],
       alt: "A Minecraft screenshot of a small obsidian portal in a stone cave, marked by a sign that reads '[Portal] TheCavern'."
@@ -404,7 +404,7 @@ export const resume: Resume = {
     //   ...cloudkeys,
     //   type: "Web",
     //   platforms: ["Desktop"],
-    //   thumbnail: "thumbnails/cloud_keys.webp",
+    //   thumbnail: "/thumbnails/cloud_keys.webp",
     // },
     // {
     //   name: "Geofare",
@@ -414,7 +414,7 @@ export const resume: Resume = {
     //   platforms: ["Desktop", "Mobile"],
     //   link: "https://geofare.github.io",
     //   repo: "https://github.com/geofare/geofare.github.io",
-    //   thumbnail: "thumbnails/geofare.webp",
+    //   thumbnail: "/thumbnails/geofare.webp",
     // },
     // {
     //   name: "Wage Worker of Wall Street",
@@ -423,7 +423,7 @@ export const resume: Resume = {
     //   type: "Game",
     //   platforms: ["Desktop"],
     //   description: "Financial literacy simulator to teach kids about stocks",
-    //   thumbnail: "thumbnails/wahoo_finance.webp",
+    //   thumbnail: "/thumbnails/wahoo_finance.webp",
     //   ...wwww,
     // },
     // {

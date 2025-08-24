@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Variants } from "framer-motion";
 
 export function AnimatedHeader(){
   // variantArr contains objects with each combination between horizontal/vertical and topLeftVariants / bottomRightVariants

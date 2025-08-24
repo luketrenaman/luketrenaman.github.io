@@ -1,7 +1,5 @@
 import {Inter} from "next/font/google";
 import { ProjectsList } from '@/components/project/ProjectsList';
-import { CourseList } from '@/components/course/CourseList';
-import { ContestList } from '@/components/contest/ContestList';
 import Head from 'next/head';
 import { AnimatedHeader } from '@/components/AnimatedHeader';
 import { SectionTitle } from "@/components/SectionTitle";

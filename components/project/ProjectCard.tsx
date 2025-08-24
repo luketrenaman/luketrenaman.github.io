@@ -18,7 +18,9 @@ export function ProjectCard({ project }: ProjectCardProps){
       className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4">
       <Card>
         {project.thumbnail && <div>
-          <a aria-label={`Click to ${verbBasedOnType} ${project.name}`} href={project.link}><img alt={project.alt} className="w-full aspect-[315/230] object-cover bg-white" src={project.thumbnail} /></a>
+          <a aria-label={`Click to ${verbBasedOnType} ${project.name}`} href={project.link}>
+            <img loading="lazy" alt={project.alt} className="w-full aspect-[315/230] object-cover bg-white" src={project.thumbnail} />
+          </a>
         </div> }
         <div className="py-3 px-2.5">
           <h3 className="mb-1">
