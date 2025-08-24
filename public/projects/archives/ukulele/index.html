@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="libs/pixi.min.js">
+    </script>
+    <style>
+    body{
+    background:#aaa;
+    }
+    </style>
+    <title>Chords</title>
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" rel="stylesheet">
+</head>
+<body>
+	<br>
+    <div class="form-group container row">
+	    	<label for="example-search-input" class="col-1 col-form-label">Chord</label>
+	    	<div class = "col-5">
+	        <input type="text" class = "form-control" value = "C" id = "chord">
+	        </div>
+	    <label for="example-search-input" class="col-1 col-form-label">Type</label>
+        <select class = "form-control col-2" id = "type">
+            <option value="major">
+                Major</option>
+            <option value="minor">
+                Minor
+            </option>
+            <option value="augmented">
+                Augmented
+            </option>
+            <option value="diminished">
+                Diminished
+            </option>
+        </select> 
+        <label for="example-search-input" class="col-1 col-form-label">Extra note</label>
+        <select class = "form-control col-2" id = "extra">
+        	<option value="none">
+                none
+            </option>
+            <option value="6">
+                6
+            </option>
+            <option value="7">
+                7
+            </option>
+            <option value="maj7">
+                maj7
+            </option>
+        </select>
+    </div>
+    <script src="bundle.js">
+    </script>
+</body>
+</html>

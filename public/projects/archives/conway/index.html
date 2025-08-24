@@ -1,0 +1,41 @@
+<html>
+<head>
+	<link href = "stylesheet.css" type = "text/css" rel = "stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div class="content">
+		<div class="sidebar">
+			<h1>Conway's Game of Life</h1>
+			<hr>
+			<p>The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. 
+				<i>Read more on <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a></i></p>
+			<h3>The Rules</h3>
+				<p>The game takes place in an infinite 2D, square grid, where each cell can either be live (white) or dead (black). Every step in time, the following calculations occur:</p>
+				<ul>
+					<li>Any live cell with less than two living neighbors dies (underpopulation)</li>
+					<li>Any live cell with two or three living neighbors lives to the next generation</li>
+					<li>Any live cell with more than three live neighbors dies (overpopulation)</li>
+					<li>Any dead cell with exactly three live neihbors becomes a live cell (reproduction)</li>
+				</ul>
+			<h3>How to use</h3>
+				<p>This implementation does not have an infinite grid, but instead has a 100x100 matrix whose edges detect each other. This ensures that all cells have 8 neighbors to check. By hovering over any cell, you can use the neighbor indicator to see what cells are "next" to it, and how many are alive.</p>
+				<p>To edit the game at any time, left click to create live cells, and right click to create dead cells.</p>
+				<p>Press "start" to begin the simulation.</p>
+		</div>
+		<div class="game">
+			<canvas id = "canvas" width = "799" height = "799">
+			</canvas>
+			<p id = "coords">
+				<span id = "cdis">[??,??] :: ?</span>
+				<canvas id = "neighbors" width = "37" height = "37">
+			</p>
+			<button id = "step">Start</button>
+			<button id = "clear">Clear</button>
+		</div>
+	</div>
+	<script src = "bundle.js">
+	</script>
+</body>
+</html>

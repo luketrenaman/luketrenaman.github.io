@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src = "index.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156935778-1"></script>
+    <meta name="description" content="Play Luketris now!">
+    <meta name="keywords" content="luke trenaman luketris game">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <title>Luketris | luketrenaman.com</title>
+    <link rel="author" href="https://github.com/luketrenaman" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156935778-1');
+    </script>
+    <style>
+        canvas{
+            transition: 0.2s all;
+        }
+        /*
+        canvas:hover{
+            filter:blur(8px);
+        }*/
+        body{
+            font-family: sans-serif;
+            width:100%;
+            margin:0px;
+        }
+        .side-panel{
+            display:inline-block;
+            max-width:400px;
+        }
+        button{
+            padding:1rem;
+            background:white;
+            border: 2px solid black;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:18px;
+            transition: 0.2s background;
+            width:8rem;
+            margin:1rem;
+            user-select:none;
+	    -ms-touch-action: manipulation;	/* IE10  */
+	    touch-action: manipulation;		/* IE11+ */
+        }
+        button:hover{
+            background:#ddd;
+        }
+        button:focus,#dpad button:focus {
+            outline:0;
+        }
+
+        .game-container{
+            margin:0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+        }
+        #game{
+            max-height:630px;
+            max-width:360px;
+            height:100vh;
+        }
+        .title{
+            text-align:center;
+        }
+        .center-text{
+            text-align:center;
+        }
+        #d-pad{
+            visibility:hidden;
+            position: fixed;
+            right:0%;
+            bottom:0%;
+            opacity:0.8;
+        }
+        #d-pad{
+            text-align:center;
+        }
+        #d-pad button span{
+            margin:0 -14vw;
+            
+        }
+        #d-pad button{
+            padding:8vh 8vw;
+            margin:0px;
+            background:white;
+            border: 2px solid black;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:6vw;
+            width:8vw;
+            height:8vh;
+            max-height:30vw;
+            max-width:30vh;
+            user-select:none;
+            box-sizing:border-box;
+            text-align:center;
+            line-height: 4vh;
+        }
+        #d-pad .wide{
+            padding:3vh 28vw;
+            width:16vw;
+            height:6vh;
+            max-height:30vw;
+            max-width:60vh;
+            line-height:2vh;
+        }
+        @media only screen and (max-width: 760px) {
+            #d-pad { visibility:visible;}
+            .game-container{
+                margin:0px 0px;
+                height:100vh;
+                align-items: center;
+                justify-content: left;
+            }
+            #game{
+                height:90vh;
+                width:100vw;
+            }
+            .side-panel{
+                visibility:hidden;
+                display:none;
+                right:0%;
+                top:0%;
+            }
+        }
+        /*
+        width
+        height is 175%
+        */
+        /*div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:100vh;
+        }*/
+    </style>
+</head>
+<body>
+    <h1 class = "title">Luketris</h1>
+        <div class = "game-container">
+            <canvas id="game" width="360" height="630"></canvas><!-- width should technically be 260-->
+            <div class="side-panel">
+                <p>Score: <span id="score"></span></p>
+                <p>Lines: <span id="lines"></span></p>
+                <h3>Instructions:</h3>
+                <p>Move a piece using ASD or the left, right, and down arrow keys.</p>
+                <p>Rotate a piece by using the up arrow key.</p>
+                <p>Instantly drop a piece using space bar.</p>
+                <p>Hold a piece to use later by pressing C.</p>
+                <p>Pause the game by pressing the p key.</p>
+                <p>View source code or report a glitch <a href = "https://github.com/luketrenaman/luketris">here</a>.</p>
+                <a href = "#game"><button id = "start">Start</button></a><button id = "pause">Pause</button>
+            </div>
+            <div id = "d-pad">
+                <a href = "#game"><button id = "start2" class = "wide"><span>Start</span></button></a>
+                <br>
+                <button id = "pause2" class = "wide"><span>Pause</span></button>
+                <br>
+                <button id = "hold">h</button>
+                <button id = "rotate">^</button>
+                <button id = "pauseKey">p</button>
+                <br>
+                <button id = "left">&lt;</button>
+                <button id = "down">v</button>
+                <button id = "right">&gt;</button>
+                <br>
+                <button id = "space" class = "wide"><span>vvv</span></button>
+            </div>
+        </div>
+        <audio id = "audio" loop="true">
+            <source src="luketris.mp3" type="audio/mpeg">
+        </audio>
+</body>
+</html>

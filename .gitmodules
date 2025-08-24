@@ -1,15 +1,15 @@
-[submodule "public/archives"]
-	path = public/archives
+[submodule "public/projects/archives"]
+	path = public/projects/archives
 	url = https://github.com/luketrenaman/archives.git
-[submodule "public/luketris"]
-	path = public/luketris
+[submodule "public/projects/luketris"]
+	path = public/projects/luketris
 	url = https://github.com/luketrenaman/luketris.git
-[submodule "public/minesweeper"]
-	path = public/minesweeper
+[submodule "public/projects/minesweeper"]
+	path = public/projects/minesweeper
 	url = https://github.com/luketrenaman/minesweeper.git
-[submodule "public/snakemaze"]
-	path = public/snakemaze
+[submodule "public/projects/snakemaze"]
+	path = public/projects/snakemaze
 	url = https://github.com/luketrenaman/snakemaze.git
-[submodule "public/wave_editor"]
-	path = public/wave_editor
+[submodule "public/projects/wave_editor"]
+	path = public/projects/wave_editor
 	url = https://github.com/luketrenaman/wave_editor.git

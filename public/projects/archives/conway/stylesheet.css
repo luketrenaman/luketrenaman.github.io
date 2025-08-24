@@ -1,0 +1,45 @@
+body{
+	background:#222;
+	color:white;
+	font-family:Monospace;
+}
+.content{
+	display:inline-block;
+}
+@media only screen and (min-width: 1500px) {
+	.content{
+		display:inline-block;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}	
+}
+h1{
+	font-size:3em;
+}
+.sidebar{
+	display:inline-block;
+	font-size:1.5em;
+	max-width:780px;
+	padding:0px 20px;
+}
+a{
+	color:#3498db;
+}
+canvas{
+	background:#888;
+	display:inline-block;
+}
+
+#coords{
+	font-size:30px;
+	margin:0px;
+}
+.game{
+	display:inline-block;
+	user-select:none;
+}
+#neighbors{
+	top:4px;
+	position:relative;
+}

@@ -1,0 +1,33 @@
+body{
+    font-family:Oxygen;
+    margin:10px;
+}
+.indicator-bar{
+    display:block;
+    visibility:hidden;
+    background:#121244;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    width:180px;
+    transition:0.2s width;
+}
+.indicator{
+    color:white;
+    padding:5px;
+    border: 1px;
+    display:inline-flex;
+    font-size:20px;
+    align-items:center;
+
+}
+.indicator-right{
+    float:right;
+}
+.indicator span{
+    margin-left:7px;
+    margin-right:7px;
+}
+.indicator img{
+    height:30px;
+    padding:2px;
+}
