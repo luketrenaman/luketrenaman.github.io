@@ -24,7 +24,8 @@ export interface Project extends Timeline {
     repo?: string; //if no deploy, repo can be inferred from above
     description: string;
     thumbnail?: string;
-    alt: string;
+    alt?: string;
+    inactive?: boolean;
 }
 export interface Organizer {
     name: string;
@@ -258,25 +259,27 @@ export const resume: Resume = {
       thumbnail: "/thumbnails/brain_food.webp",
       alt: "Pixel art of a rundown storefront named 'BRAIN FOOD,' featuring a large burger sign and a boarded-up window, in a post-apocalyptic or zombie setting."
     },
-    // {
-    //   name: "Mason Student Activities",
-    //   ...studentActivities,
-    //   link: "https://masonstudentactivities.github.io",
-    //   repo: "https://github.com/masonstudentactivities/masonstudentactivities.github.io",
-    //   type: "Web",
-    //   platforms: ["Desktop", "Mobile"],
-    //   description: "Volunteered at my school to redesign the student activities website.",
-    //   thumbnail: "/thumbnails/site.webp",
-    // },
-    // {
-    //   name: "INTERalliance",
-    //   ...interalliance,
-    //   link: "https://interalliance.org",
-    //   type: "Web",
-    //   platforms: ["Desktop", "Mobile"],
-    //   description: "Worked at INTERalliance to implement a redesigned website.",
-    //   thumbnail: "/thumbnails/ia_site.webp",
-    // },
+    {
+      name: "Mason Student Activities",
+      ...studentActivities,
+      link: "https://masonstudentactivities.github.io",
+      repo: "https://github.com/masonstudentactivities/masonstudentactivities.github.io",
+      type: "Web",
+      platforms: ["Desktop", "Mobile"],
+      description: "Volunteered at my school to redesign the student activities website.",
+      thumbnail: "/thumbnails/site.webp",
+      inactive: true
+    },
+    {
+      name: "INTERalliance",
+      ...interalliance,
+      link: "https://interalliance.org",
+      type: "Web",
+      platforms: ["Desktop", "Mobile"],
+      description: "Worked at INTERalliance to implement a redesigned website.",
+      thumbnail: "/thumbnails/ia_site.webp",
+      inactive: true
+    },
     {
       name: "Rotator",
       link: "/projects/rotator/index.html",
@@ -397,53 +400,58 @@ export const resume: Resume = {
       platforms: [],
       alt: "A Minecraft screenshot of a small obsidian portal in a stone cave, marked by a sign that reads '[Portal] TheCavern'."
     },
-    // {
-    //   name: "Cloud Keys",
-    //   link: "https://github.com/luketrenaman/cloudkeys",
-    //   description: "A realtime streaming service for MIDI keyboard performances.",
-    //   ...cloudkeys,
-    //   type: "Web",
-    //   platforms: ["Desktop"],
-    //   thumbnail: "/thumbnails/cloud_keys.webp",
-    // },
-    // {
-    //   name: "Geofare",
-    //   ...geofare,
-    //   description: "Food bank map made for HooHacks 2022.",
-    //   type: "Web",
-    //   platforms: ["Desktop", "Mobile"],
-    //   link: "https://geofare.github.io",
-    //   repo: "https://github.com/geofare/geofare.github.io",
-    //   thumbnail: "/thumbnails/geofare.webp",
-    // },
-    // {
-    //   name: "Wage Worker of Wall Street",
-    //   link: "https://ucstocks.github.io/",
-    //   repo: "https://github.com/ucstocks/ucstocks.github.io",
-    //   type: "Game",
-    //   platforms: ["Desktop"],
-    //   description: "Financial literacy simulator to teach kids about stocks",
-    //   thumbnail: "/thumbnails/wahoo_finance.webp",
-    //   ...wwww,
-    // },
-    // {
-    //   name: "Minesweeper",
-    //   start: new Date("Nov 16, 2022"),
-    //   end: new Date("Jan 3 2023"),
-    //   link: "https://luketrenaman.com/minesweeper",
-    //   description: "Clone of the popular game minesweeper",
-    //   type: "Web",
-    //   platforms: ["Desktop"],
-    // },
-    // {
-    //   name: "Mirage opmodes",
-    //   start: new Date("Dec 11 2021"),
-    //   end: new Date("Feb 21 2022"),
-    //   link: "https://github.com/luketrenaman/mirage-opmodes/",
-    //   description: "I was on a robotics team for a bit",
-    //   type: "Other",
-    //   platforms: [],
-    // },
+    {
+      name: "Cloud Keys",
+      link: "https://github.com/luketrenaman/cloudkeys",
+      description: "A realtime streaming service for MIDI keyboard performances.",
+      ...cloudkeys,
+      type: "Web",
+      platforms: ["Desktop"],
+      thumbnail: "/thumbnails/cloud_keys.webp",
+      inactive: true
+    },
+    {
+      name: "Geofare",
+      ...geofare,
+      description: "Food bank map made for HooHacks 2022.",
+      type: "Web",
+      platforms: ["Desktop", "Mobile"],
+      link: "https://geofare.github.io",
+      repo: "https://github.com/geofare/geofare.github.io",
+      thumbnail: "/thumbnails/geofare.webp",
+      inactive: true
+    },
+    {
+      name: "Wage Worker of Wall Street",
+      link: "https://ucstocks.github.io/",
+      repo: "https://github.com/ucstocks/ucstocks.github.io",
+      type: "Game",
+      platforms: ["Desktop"],
+      description: "Financial literacy simulator to teach kids about stocks",
+      thumbnail: "/thumbnails/wahoo_finance.webp",
+      ...wwww,
+      inactive: true
+    },
+    {
+      name: "Minesweeper",
+      start: new Date("Nov 16, 2022"),
+      end: new Date("Jan 3 2023"),
+      link: "https://luketrenaman.com/minesweeper",
+      description: "Clone of the popular game minesweeper",
+      type: "Web",
+      platforms: ["Desktop"],
+      inactive: true
+    },
+    {
+      name: "Mirage opmodes",
+      start: new Date("Dec 11 2021"),
+      end: new Date("Feb 21 2022"),
+      link: "https://github.com/luketrenaman/mirage-opmodes/",
+      description: "I was on a robotics team for a bit",
+      type: "Other",
+      platforms: [],
+      inactive: true
+    },
   ],
   contests: [
     {

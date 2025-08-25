@@ -4,5 +4,5 @@ import ProjectCard from './ProjectCard.astro';
 import RowWrapper from '../RowWrapper.astro';
 ---
 <RowWrapper>
-  {resume.projects.map((project, i) => <ProjectCard project={project} />)}
+  {resume.projects.filter(project => !project.inactive).map((project, i) => <ProjectCard project={project} />)}
 </RowWrapper>
