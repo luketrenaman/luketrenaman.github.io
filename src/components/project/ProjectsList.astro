@@ -2,7 +2,32 @@
 import {resume} from '../../util/resume';
 import ProjectCard from './ProjectCard.astro';
 import RowWrapper from '../RowWrapper.astro';
+
+const INITIAL_COUNT = 12;
+const activeProjects = resume.projects.filter(project => !project.inactive);
+const visibleProjects = activeProjects.slice(0, INITIAL_COUNT);
+const overflowProjects = activeProjects.slice(INITIAL_COUNT);
 ---
 <RowWrapper>
-  {resume.projects.filter(project => !project.inactive).map((project, i) => <ProjectCard project={project} />)}
+  {visibleProjects.map(project => <ProjectCard project={project} />)}
 </RowWrapper>
+{overflowProjects.length > 0 && (
+  <Fragment>
+    <div id="overflow-projects" class="hidden">
+      <RowWrapper>
+        {overflowProjects.map(project => <ProjectCard project={project} />)}
+      </RowWrapper>
+    </div>
+    <div class="flex justify-center mt-4">
+      <button id="load-more-btn" class="px-6 py-2 border border-current rounded hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer">
+        Load More
+      </button>
+    </div>
+    <script>
+      document.getElementById('load-more-btn')?.addEventListener('click', () => {
+        document.getElementById('overflow-projects')?.classList.remove('hidden');
+        document.getElementById('load-more-btn')?.parentElement?.remove();
+      });
+    </script>
+  </Fragment>
+)}

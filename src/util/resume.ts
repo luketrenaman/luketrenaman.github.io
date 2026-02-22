@@ -249,6 +249,16 @@ export const resume: Resume = {
       alt: "The title graphic for 'Lunar Lock,' displaying a hand-drawn illustration of the moon shaped like a padlock next to the game's name against a starry sky."
     },
     {
+      name: "Tips for Shrimps",
+      link: "/projects/tips-for-shrimps/index.html",
+      type: "Game",
+      platforms: ["Desktop"],
+      description: "Punch fish and build speed to achieve your dreams.",
+      start: new Date("Jan 1 2025"),
+      end: new Date("Feb 20 2025"),
+      thumbnail: "/thumbnails/tips-for-shrimps.webp",
+    },
+    {
       name: "Brain Food",
       link: "https://brainfoodgame.github.io/",
       type: "Game",
@@ -408,7 +418,6 @@ export const resume: Resume = {
       type: "Web",
       platforms: ["Desktop"],
       thumbnail: "/thumbnails/cloud_keys.webp",
-      inactive: true
     },
     {
       name: "Geofare",
@@ -419,7 +428,6 @@ export const resume: Resume = {
       link: "https://geofare.github.io",
       repo: "https://github.com/geofare/geofare.github.io",
       thumbnail: "/thumbnails/geofare.webp",
-      inactive: true
     },
     {
       name: "Wage Worker of Wall Street",
@@ -430,7 +438,6 @@ export const resume: Resume = {
       description: "Financial literacy simulator to teach kids about stocks",
       thumbnail: "/thumbnails/wahoo_finance.webp",
       ...wwww,
-      inactive: true
     },
     {
       name: "Minesweeper",
